@@ -2,6 +2,7 @@
 html, body {
 	width: 100%;
 	overflow-x: hidden;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -57,3 +58,209 @@ table {
 
 /* Template Styling */
 
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(./Images/ForestSchool.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	padding: 0.5rem;
+	width: 100%;
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 1rem;
+	letter-spacing: -2px;
+	background: black;
+	opacity: 0.7;
+}
+
+.letter1 {
+	color: #f0513e;
+}
+
+.letter2 {
+	color: #58d1d9;
+}
+
+.letter3 {
+	color: #c6d932;
+}
+
+.letter4 {
+	color: #fecf05;
+}
+
+.letter5 {
+	color: #238fcf;
+}
+
+.letter6 {
+	margin-right: 0.6rem;
+	color: #5cb54b;
+}
+
+.letter7 {
+	color: #f0513e;
+}
+
+.letter8 {
+	color: #58d1d9;
+}
+
+.letter9 {
+	color: #c6d932;
+}
+
+.letter10 {
+	color: #fecf05;
+}
+
+.letter11 {
+	color: #238fcf;
+}
+
+.letter12 {
+	color: #5cb54b;
+}
+
+.letter13 {
+	color: #f0513e;
+}
+
+.letter14 {
+	color: #58d1d9;
+}
+
+.letter15 {
+	color: #67c243;
+}
+
+.letter16 {
+	color: #fecf05;
+}
+
+.letter17 {
+	color: #238fcf;
+}
+
+.fSchool {
+	display: block;
+	font-size: 1.3rem;
+	color: #67c243;
+	letter-spacing: 1px;
+}
+
+/*
+red #f0513e
+light blue 58d1d9
+lught green c6d932
+yellow fecf05
+dark blue 238fcf
+dark green 5cb54b
+forest school green 67c243
+*/
+
+nav ul {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+	transform: translateY(-10%);
+}
+
+nav.open ul {
+	transition: 0.2s ease-in-out;
+	opacity: 1;
+	transform: translateY(0);
+	z-index: 200;
+	/* background: black;
+	opacity: 0.7; */
+}
+
+nav ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.5rem;
+	padding: 0.3rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.home a {
+	color: #f0513e;
+}
+
+.whatsNew a {
+	color: #58d1d9;
+}
+
+.gallery a {
+	color: #c6d932;
+}
+
+.grownUps a {
+	color: #fecf05;
+}
+
+.parents a {
+	color: #238fcf
+}
+
+.kitList a {
+	color: #5cb54b;
+}
+
+.contact a {
+	color: #f0513e
+}
+
+.burger {
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 1.6rem;
+	right: 0.3rem;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 2rem;
+	height: 0.14rem;
+	background: white;
+	margin: 0.15rem;
+	transition: transform 0.2s ease-in-out;
+}
+
+.burger.active .bar1 {
+	transform: rotate(-45deg) translate(-5px, 5px);
+	transition: transform 0.3s ease-in-out;
+}
+
+.burger.active .bar2 {
+	opacity: 0;
+	transition: transform 0.5s ease-in-out;
+}
+
+.burger.active .bar3 {
+	transform: rotate(45deg) translate(-5px, -5px);
+	transition: transform 0.3s ease-in-out;
+}
+
+
+.treeLine {
+	opacity: 0.95;
+	position: relative;
+	filter: contrast(20) invert(0.1);
+	top: -14rem;
+}

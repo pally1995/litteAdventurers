@@ -1,0 +1,106 @@
+.ethos{
+    width: 100%;
+    z-index: 200;
+    padding: 1rem 0;
+}
+
+.ethos h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.ethos p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contactBtnContainer{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBtn {
+  border: 2px solid #05762e;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #05762e;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 60px;
+  padding: 16px 24px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  width: 30%;
+  will-change: transform;
+}
+
+.contactBtn:hover {
+  color: #fff;
+  background-color: #05762e;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.contactBtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.carousel {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
+
+  .socials{
+    margin: 2rem;
+  }
