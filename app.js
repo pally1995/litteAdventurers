@@ -9,6 +9,8 @@ burger.addEventListener('click', () => {
     burger.classList.toggle("active");
 })
 
+
+
 slides.forEach((slide, index) => {
     slide.style.transform = `translateX(${index * 100}%)`;
   });
