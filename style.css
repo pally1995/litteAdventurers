@@ -61,7 +61,7 @@ table {
 nav::before {
 	content: "";
 	position: absolute;
-	margin-top: 4rem;
+	margin-top: 5rem;
 	display: flex;
 	width: 100%;
 	height: 18rem;
@@ -78,7 +78,6 @@ nav.open::before {
 }
 
 h1 {
-	top: -4rem;
 	font-family: 'Lilita One', sans-serif;
 	letter-spacing: 1.5px;
 	padding: 0.5rem;
@@ -241,20 +240,33 @@ nav ul li a:hover{
 }
 
 .burger {
-	z-index: 100;
 	display: flex;
 	flex-direction: column;
-	
-	margin: 0.5rem;
 	cursor: pointer;
+	position: fixed;
+	left: 85%;
+	top: 7%;
 }
 
-.bar1, .bar2, .bar3 {
+.burger-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 2rem;
 	width: 2rem;
-	height: 0.2rem;
-	background: white;
+	border-radius: 50%; 
+	border: 3px solid #f0513e;
+	padding: 0.15rem;
+  }
+
+.bar1, .bar2, .bar3 {
+	width: 1.5rem;
+	height: 0.19rem;
+	background: #f0513e;
 	margin: 0.15rem;
 	transition: transform 0.2s ease-in-out;
+	z-index: 100;
 }
 
 .burger.active .bar1 {
