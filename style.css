@@ -61,7 +61,7 @@ table {
 nav::before {
 	content: "";
 	position: absolute;
-	margin-top: 5rem;
+	margin-top: 6.5rem;
 	display: flex;
 	width: 100%;
 	height: 18rem;
@@ -77,6 +77,34 @@ nav.open::before {
 	filter: brightness(0.2);
 }
 
+.bee, .bFly, .leaf1, .mushroom {
+	height: 3.5rem;
+	z-index: -100;
+	position: fixed;
+}
+
+.bee {
+	right: 5rem;
+	top: 3rem;
+	height: 2rem !important;
+}
+
+.bFly {
+	height: 2.5rem !important;
+	top: 0.3rem;
+	left: 1.2rem;
+}
+
+.leaf1 {
+	right: 1rem;
+}
+
+.mushroom {
+	height: 2rem;
+	top: 3rem;
+	left: 5rem;
+}
+
 h1 {
 	font-family: 'Lilita One', sans-serif;
 	letter-spacing: 1.5px;
@@ -86,9 +114,8 @@ h1 {
 	font-size: 2rem;
 	text-align: center;
 	letter-spacing: -2px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
-
 
 .letter1 {
 	color: #f0513e;
@@ -159,12 +186,15 @@ h1 {
 	color: #238fcf;
 }
 
+
 .fSchool {
 	display: block;
 	font-size: 1.3rem;
 	color: #67c243;
 	letter-spacing: 1px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
 
 /*
 red #f0513e
@@ -244,8 +274,8 @@ nav ul li a:hover{
 	flex-direction: column;
 	cursor: pointer;
 	position: fixed;
-	left: 85%;
-	top: 7%;
+	left: 45%;
+	top: 12%;
 }
 
 .burger-container {
@@ -253,24 +283,24 @@ nav ul li a:hover{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 2rem;
-	width: 2rem;
+	height: 1.5rem;
+	width: 1.5rem;
 	border-radius: 50%; 
-	border: 3px solid #f0513e;
+	border: 2px solid #f0513e;
 	padding: 0.15rem;
   }
 
 .bar1, .bar2, .bar3 {
-	width: 1.5rem;
-	height: 0.19rem;
+	width: 1.2rem;
+	height: 0.13rem;
 	background: #f0513e;
-	margin: 0.15rem;
+	margin: 0.12rem;
 	transition: transform 0.2s ease-in-out;
 	z-index: 100;
 }
 
 .burger.active .bar1 {
-	transform: rotate(-45deg) translate(-6px, 6px);
+	transform: rotate(-45deg) translate(-3px, 3px);
 	transition: transform 0.3s ease-in-out;
 }
 
