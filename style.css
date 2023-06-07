@@ -61,7 +61,7 @@ table {
 nav::before {
 	content: "";
 	position: absolute;
-	margin-top: 6.5rem;
+	margin-top: 7rem;
 	display: flex;
 	width: 100%;
 	height: 18rem;
@@ -77,33 +77,30 @@ nav.open::before {
 	filter: brightness(0.2);
 }
 
-.bee, .bFly, .leaf1, .mushroom {
-	height: 3.5rem;
-	z-index: -100;
-	position: fixed;
-}
-
-.bee {
-	right: 5rem;
-	top: 3rem;
-	height: 2rem !important;
+.animalContainer{
+	width: 100vw;
+	height: 7rem;
+	position: absolute;
+	justify-content: space-between;
+	display: flex;
 }
 
 .bFly {
-	height: 2.5rem !important;
-	top: 0.3rem;
-	left: 1.2rem;
+	position: relative;
+	height: 4rem;
+	left: 1rem;
+	z-index: -100;
 }
 
 .leaf1 {
-	right: 1rem;
+	position: relative;
+	right: 2rem;
+	top: 1rem;
+	height: 6rem;
+	z-index: -100;
+	transform: rotate(80deg);
 }
 
-.mushroom {
-	height: 2rem;
-	top: 3rem;
-	left: 5rem;
-}
 
 h1 {
 	font-family: 'Lilita One', sans-serif;
@@ -114,7 +111,7 @@ h1 {
 	font-size: 2rem;
 	text-align: center;
 	letter-spacing: -2px;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	/* text-shadow: -1px -1px 0 #00000097, 1px -1px 0 #00000097, -1px 1px 0 #00000097, 1px 1px 0 #00000097; */
 }
 
 .letter1 {
@@ -192,7 +189,7 @@ h1 {
 	font-size: 1.3rem;
 	color: #67c243;
 	letter-spacing: 1px;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 
@@ -269,26 +266,30 @@ nav ul li a:hover{
 	color: #f0513e
 }
 
-.burger {
+
+.containerBurger{
+	width: 100vw;
 	display: flex;
-	flex-direction: column;
-	cursor: pointer;
-	position: fixed;
-	left: 45%;
-	top: 12%;
+	justify-content: center;
 }
 
-.burger-container {
+.burgerContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	height: 1.5rem;
 	width: 1.5rem;
 	border-radius: 50%; 
 	border: 2px solid #f0513e;
-	padding: 0.15rem;
+	padding: 2px;
   }
+
+.burger {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
 
 .bar1, .bar2, .bar3 {
 	width: 1.2rem;
@@ -314,3 +315,35 @@ nav ul li a:hover{
 	transition: transform 0.3s ease-in-out;
 }
 
+.address {
+	display: flex;
+
+}
+
+.calvertonDetails{
+	flex: 50%;
+	margin: 1rem;
+}
+
+.walesbyDetails{
+	margin: 1rem;
+}
+
+footer span {
+	height: 6rem;
+	width: 1px;
+	background: black;
+	align-self: center;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 1rem;
+}
+
+.contact a {
+	margin: 0.5rem 0;
+	text-decoration: none;
+	color: black;
+}
