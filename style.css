@@ -3,6 +3,10 @@
 html, body {
 	width: 100%;
 	overflow-x: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.3px;
+	color: #646464;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -83,24 +87,15 @@ nav.open::before {
 	position: absolute;
 	justify-content: space-between;
 	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .bFly {
-	position: relative;
+	margin: 1.5rem 0 0 4rem;
 	height: 4rem;
-	left: 1rem;
 	z-index: -100;
 }
-
-.leaf1 {
-	position: relative;
-	right: 2rem;
-	top: 1rem;
-	height: 6rem;
-	z-index: -100;
-	transform: rotate(80deg);
-}
-
 
 h1 {
 	font-family: 'Lilita One', sans-serif;
@@ -111,7 +106,6 @@ h1 {
 	font-size: 2rem;
 	text-align: center;
 	letter-spacing: -2px;
-	/* text-shadow: -1px -1px 0 #00000097, 1px -1px 0 #00000097, -1px 1px 0 #00000097, 1px 1px 0 #00000097; */
 }
 
 .letter1 {
@@ -189,7 +183,6 @@ h1 {
 	font-size: 1.3rem;
 	color: #67c243;
 	letter-spacing: 1px;
-	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 
@@ -237,35 +230,6 @@ nav ul li a {
 nav ul li a:hover{
 	text-decoration: underline;
 }
-
-.home a {
-	color: #f0513e;
-}
-
-.whatsNew a {
-	color: #58d1d9;
-}
-
-.gallery a {
-	color: #c6d932;
-}
-
-.grownUps a {
-	color: #fecf05;
-}
-
-.parents a {
-	color: #238fcf
-}
-
-.kitList a {
-	color: #5cb54b;
-}
-
-.contact a {
-	color: #f0513e
-}
-
 
 .containerBurger{
 	width: 100vw;
@@ -315,35 +279,81 @@ nav ul li a:hover{
 	transition: transform 0.3s ease-in-out;
 }
 
+.home a {
+	color: #f0513e;
+}
+
+.whatsNew a {
+	color: #58d1d9;
+}
+
+.gallery a {
+	color: #c6d932;
+}
+
+.grownUps a {
+	color: #fecf05;
+}
+
+.parents a {
+	color: #238fcf
+}
+
+.kitList a {
+	color: #5cb54b;
+}
+
+.contact a {
+	color: #f0513e
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+}
+
 .address {
 	display: flex;
-
+	justify-content: space-between;
 }
 
 .calvertonDetails{
-	flex: 50%;
-	margin: 1rem;
+	margin: 0.5rem 1.5rem;
+}
+
+.calvertonDetails h4 {
+	margin-bottom: 0.5rem;
 }
 
 .walesbyDetails{
-	margin: 1rem;
+	margin: 0.5rem 1.5rem;
+}
+
+.walesbyDetails h4 {
+	margin-bottom: 0.5rem;
 }
 
 footer span {
 	height: 6rem;
 	width: 1px;
 	background: black;
-	align-self: center;
 }
 
 .contact{
 	display: flex;
 	flex-direction: column;
-	margin: 2rem 1rem;
+	margin: 1rem 1rem 1rem 1rem;
 }
 
 .contact a {
-	margin: 0.5rem 0;
+	margin: 0.2rem 0;
 	text-decoration: none;
 	color: black;
+}
+
+footer img {
+	margin: 1rem 0 0 2.5rem;
+	width: 3rem;
+	height: auto;
+	align-self: center;
 }

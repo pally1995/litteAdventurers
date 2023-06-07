@@ -1,20 +1,25 @@
+/*
+red #f0513e
+light blue 58d1d9
+lught green c6d932
+yellow fecf05
+dark blue 238fcf
+dark green 5cb54b
+forest school green 67c243
+*/
 .ethos{
     width: 100%;
-    z-index: 200;
-    padding: 2rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
 }
 
 .ethos h2 {
     font-weight: 700;
-    text-align: center;
     font-size: 1.5rem;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
-.ethos p {
-    width: 70%;
-    margin: 0 auto;
-}
 
 .contactBtnContainer{
     width: 100%;
