@@ -1,5 +1,6 @@
 const burger = document.querySelector(".burger");
 const navBar = document.querySelector("nav");
+const navImg = document.querySelector("#navImg");
 const slides = document.querySelectorAll(".slide");
 const nextSlide = document.querySelector(".btn-next");
 const prevSlide = document.querySelector(".btn-prev");
@@ -7,9 +8,14 @@ const prevSlide = document.querySelector(".btn-prev");
 burger.addEventListener('click', () => {
     navBar.classList.toggle("open");
     burger.classList.toggle("active");
+
+    if(navBar.classList.contains("open")){
+      navImg.style.filter = "brightness(0.2)";
+      navImg.style.transition = "0.3s all ease-in-out";
+    } else {
+      navImg.style.filter = "none";
+    }
 })
-
-
 
 slides.forEach((slide, index) => {
     slide.style.transform = `translateX(${index * 100}%)`;

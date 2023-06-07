@@ -61,34 +61,42 @@ table {
 
 /* Template Styling */
 
+body {
+	background: #e8f1d6;
+}
 
-nav::before {
-	content: "";
-	position: absolute;
-	margin-top: 7rem;
+nav {
+	/* content: ""; */
+	/* position: absolute; */
+	/* margin-top: 4.5rem; */
 	display: flex;
 	width: 100%;
 	height: 18rem;
 	flex-direction: column;
 	align-items: center;
-	background-image: url(./Images/play.jpg);
+	/* background-image: url(./Images/play.jpg);
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	transition: all 0.3s ease-in-out;
 }
 
-nav.open::before {
-	filter: brightness(0.2);
+nav img {
+	width: 100vw;
+	height: 20rem;
+	position: absolute;
+	z-index: -100;
 }
+
 
 .animalContainer{
 	width: 100vw;
-	height: 7rem;
+	height: 5rem;
 	position: absolute;
 	justify-content: space-between;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	background: white;
 }
 
 .bFly {
@@ -98,14 +106,16 @@ nav.open::before {
 }
 
 h1 {
+	position: relative;
 	font-family: 'Lilita One', sans-serif;
 	letter-spacing: 1.5px;
 	padding: 0.5rem;
 	width: 100%;
 	font-weight: 400;
 	font-size: 2rem;
-	text-align: center;
-	letter-spacing: -2px;
+	text-align: start;
+	letter-spacing: -3px;
+	z-index: 100;
 }
 
 .letter1 {
@@ -201,7 +211,7 @@ nav ul {
 	letter-spacing: 1.5px;
 	list-style: none;
 	text-align: center;
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	width: 100%;
 	opacity: 0;
 	transform: translateY(-10%);
@@ -227,27 +237,13 @@ nav ul li a {
 	font-weight: 700;
 }
 
-nav ul li a:hover{
-	text-decoration: underline;
-}
 
 .containerBurger{
 	width: 100vw;
 	display: flex;
-	justify-content: center;
+	justify-content: end;
+	margin: -3.31rem 0 0 -1rem;
 }
-
-.burgerContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 1.5rem;
-	width: 1.5rem;
-	border-radius: 50%; 
-	border: 2px solid #f0513e;
-	padding: 2px;
-  }
 
 .burger {
 	display: flex;
@@ -256,8 +252,8 @@ nav ul li a:hover{
 }
 
 .bar1, .bar2, .bar3 {
-	width: 1.2rem;
-	height: 0.13rem;
+	width: 1.8rem;
+	height: 0.2rem;
 	background: #f0513e;
 	margin: 0.12rem;
 	transition: transform 0.2s ease-in-out;
@@ -291,20 +287,20 @@ nav ul li a:hover{
 	color: #c6d932;
 }
 
-.grownUps a {
+.ourGrownUps a {
 	color: #fecf05;
 }
 
-.parents a {
+.toddlers a {
 	color: #238fcf
 }
 
-.kitList a {
+.preSchool a {
 	color: #5cb54b;
 }
 
 .contact a {
-	color: #f0513e
+	color: #f0513e !important;
 }
 
 footer{
@@ -339,13 +335,13 @@ footer span {
 	background: black;
 }
 
-.contact{
+.contactDetails{
 	display: flex;
 	flex-direction: column;
 	margin: 1rem 1rem 1rem 1rem;
 }
 
-.contact a {
+.contactDetails a {
 	margin: 0.2rem 0;
 	text-decoration: none;
 	color: black;
