@@ -3,9 +3,6 @@
 html, body {
 	width: 100%;
 	overflow-x: hidden;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: 600;
-	letter-spacing: 0.3px;
 	color: #646464;
 }
 
@@ -61,8 +58,9 @@ table {
 
 /* Template Styling */
 
+/* main background colour */
 body {
-	background: #e8f1d6;
+	background: #f9fbeb;
 }
 
 nav {
@@ -299,6 +297,7 @@ nav ul li a {
 }
 
 footer{
+	margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -355,5 +354,5 @@ footer img {
 
   .fb img, .insta img, .tiktok img  {
     height: 3rem;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 1rem 0 1rem;
   }

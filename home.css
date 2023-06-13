@@ -142,10 +142,24 @@ forest school green 67c243
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     width: 100vw;
     height: 20rem;
-    margin: 1.2rem 0 0 0;
-  }
+    margin: 1.2rem 0;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.reviewBg {
+  margin-top: -2rem;
+  position: absolute;
+  background: green;
+  height: 20rem;
+  width: 100%;
+  z-index: -1;
+  background: #017ca7;
+  clip-path: circle(68% at 50% 76%);
+}
 
   .reviews h3 {
     font-size: 1.7rem;
@@ -153,6 +167,6 @@ forest school green 67c243
 
   .review1, .review2, .review3{
     width: 60%;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
   }
 
