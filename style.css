@@ -66,17 +66,11 @@ body {
 }
 
 nav {
-	/* content: ""; */
-	/* position: absolute; */
-	/* margin-top: 4.5rem; */
 	display: flex;
 	width: 100%;
 	height: 18rem;
 	flex-direction: column;
 	align-items: center;
-	/* background-image: url(./Images/play.jpg);
-	background-size: cover;
-	background-repeat: no-repeat; */
 	transition: all 0.3s ease-in-out;
 }
 
@@ -110,6 +104,7 @@ h1 {
 	font-family: 'Lilita One', sans-serif;
 	letter-spacing: 1.5px;
 	padding: 0.5rem;
+	margin-left: 1rem;
 	width: 100%;
 	font-weight: 400;
 	font-size: 2rem;
@@ -329,27 +324,36 @@ footer{
 	margin-bottom: 0.5rem;
 }
 
-footer span {
-	height: 6rem;
-	width: 1px;
-	background: black;
-}
-
 .contactDetails{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	margin: 1rem 1rem 1rem 1rem;
 }
 
 .contactDetails a {
 	margin: 0.2rem 0;
 	text-decoration: none;
-	color: black;
+	color: #646464;
 }
 
 footer img {
-	margin: 1rem 0 0 2.5rem;
+	margin: 1rem 0;
 	width: 3rem;
 	height: auto;
 	align-self: center;
 }
+
+.socials{
+    margin: 0 0 2rem 0rem;
+    text-align: center;
+  }
+
+  .socials h3 {
+    margin-bottom: 1rem;
+  }
+
+  .fb img, .insta img, .tiktok img  {
+    height: 3rem;
+    margin: 0 1rem 1rem 1rem;
+  }

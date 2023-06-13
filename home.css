@@ -9,9 +9,8 @@ forest school green 67c243
 */
 .ethos{
     width: 100%;
-    padding-bottom: 1rem;
     text-align: center;
-    padding: 3rem 0;
+    padding: 3rem 0 1rem 0;
 }
 
 .ethos h2 {
@@ -20,35 +19,67 @@ forest school green 67c243
     margin: 1rem 0;
 }
 
-
 .contactBtnContainer{
     width: 100%;
     margin: 2rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .contactBtn {
-  border: 2px solid #05762e;
-  border-radius: 15px;
+  border: 5px solid #f0513e;
   box-sizing: border-box;
-  color: #05762e;
+  color: #f0513e;
   cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 600;
-  min-height: 60px;
-  padding: 16px 24px;
+  font-size: 2rem;
+	font-family: 'Lilita One', sans-serif;
+	font-weight: 400;
+  padding: 16px;
   text-align: center;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  width: 30%;
-  will-change: transform;
+  width: 60%;
+  letter-spacing: -3px;
+}
+
+.contactLetter1 {
+	color: #f0513e;
+}
+
+.contactLetter2 {
+	color: #58d1d9;
+}
+
+.contactLetter3 {
+	color: #a8b929;
+}
+
+.contactLetter4 {
+	color: #fecf05;
+}
+
+.contactLetter5 {
+	color: #238fcf;
+}
+
+.contactLetter6 {
+	color: #5cb54b;
+}
+
+.contactLetter7 {
+	color: #f0513e;
+}
+
+.contactLetter8 {
+	color: #58d1d9;
+}
+
+.contactLetter9 {
+	color: #a8b929;
 }
 
 .contactBtn:hover {
   color: #fff;
-  background-color: #05762e;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -107,30 +138,21 @@ forest school green 67c243
     right: 2%;
   }
 
-  .socials{
-    margin: 2rem;
-    text-align: center;
-  }
-
-  .socials h3 {
-    margin-bottom: 1rem;
-  }
-
-  .fb img, .insta img, .tiktok img  {
-    height: 3rem;
-    margin: 0 1rem 0 1rem;
-  }
-
   .reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     height: 20rem;
+    margin: 1.2rem 0 0 0;
+  }
+
+  .reviews h3 {
+    font-size: 1.7rem;
   }
 
   .review1, .review2, .review3{
-    width: 70%;
+    width: 60%;
     margin: 1rem 0;
   }
 
