@@ -72,17 +72,9 @@ nav {
 	transition: all 0.3s ease-in-out;
 }
 
-nav img {
-	width: 100vw;
-	height: 20rem;
-	position: absolute;
-	z-index: -100;
-}
-
-
 .animalContainer{
 	width: 100vw;
-	height: 5rem;
+	height: 4rem;
 	position: absolute;
 	justify-content: space-between;
 	display: flex;
@@ -91,9 +83,10 @@ nav img {
 	background: white;
 }
 
-.bFly {
-	margin: 1.5rem 0 0 4rem;
-	height: 4rem;
+nav img {
+	width: 100vw;
+	height: 21rem;
+	position: absolute;
 	z-index: -100;
 }
 
