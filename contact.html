@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Little Adventurers Forest School</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -36,39 +39,56 @@
           <span class="fSchool">Forest School</span>
         </h1>
         <div class="containerBurger">
-            <div class="burger">
-              <span class="bar1"></span>
-              <span class="bar2"></span>
-              <span class="bar3"></span>
-            </div>
+          <div class="burger">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
         </div>
-        <img id="navImg" src="./Images/play.jpg" alt="">
         <ul class="active">
           <li class="home"><a href="./index.html">Home</a></li>
           <li class="whatsNew"><a href="./whatsNew.html">Whats New</a></li>
           <li class="gallery"><a href="./gallery.html">Gallery</a></li>
-          <li class="ourGrownUps"><a href="./grownUps.html">Our Grown Ups</a></li>
+          <li class="ourGrownUps">
+            <a href="./grownUps.html">Our Grown Ups</a>
+          </li>
           <li class="toddlers"><a href="./toddlers.html">Toddlers</a></li>
           <li class="preSchool"><a href="./preSchool.html">Pre-School</a></li>
           <li class="contact"><a href="./contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-      <section class="contactContainer">
-        <h2>Get in touch</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Full Name">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email Address">
-          <label for="numer">Number</label>
-          <input type="number" id="number" name="number" placeholder="Contact Number">
-          <label for="message">Query</label>
-          <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-        </form>
-      </section>
+    <section class="contactContainer main">
+      <h2>Get in touch</h2>
+      <form action="https://formspree.io/f/xoqzgbrp" method="POST">
+        <!-- <label for="name">Name</label> -->
+        <input type="text" id="name" name="name" placeholder="Full Name" />
+        <!-- <label for="email">Email</label> -->
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+        />
+        <!-- <label for="numer">Number</label> -->
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Contact Number"
+        />
+        <!-- <label for="message">Query</label> -->
+        <textarea
+          id="message"
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message"
+        ></textarea>
+        <button type="submit">Send!</button>
+      </form>
+    </section>
 
-    
     <footer>
       <div class="address">
         <div class="calvertonDetails">
@@ -88,14 +108,31 @@
       </div>
       <div class="contactDetails">
         <a href="tel:07804495287">0780449287</a>
-        <a href="mailto:littleadventurers.adm@outlook.com">littleadventurers.adm@outlook.com</a>
-        <img src="./Images/300003651_563104908772126_7460314064965198395_n.jpg" alt="Forest school logo">
+        <a href="mailto:littleadventurers.adm@outlook.com"
+          >littleadventurers.adm@outlook.com</a
+        >
+        <img
+          src="./Images/300003651_563104908772126_7460314064965198395_n.jpg"
+          alt="Forest school logo"
+        />
       </div>
       <section class="socials">
         <h3>Join The Community</h3>
-        <a href="https://www.facebook.com/littleadventurersforestschool/?locale=en_GB" class="fb"><img src="./Images/fbIcon.png" alt="Facebook Icon"></a>
-        <a href="https://www.instagram.com/littleadventurersforestschool/" class="insta"><img src="./Images/instaIcon.png" alt="Instagram Icon"></a>
-        <a href="https://www.tiktok.com/@littleadventurers_forest" class="tiktok"><img src="./Images/tiktokIcon.png" alt="TikTok Icon"></a>
+        <a
+          href="https://www.facebook.com/littleadventurersforestschool/?locale=en_GB"
+          class="fb"
+          ><img src="./Images/fbIcon.png" alt="Facebook Icon"
+        /></a>
+        <a
+          href="https://www.instagram.com/littleadventurersforestschool/"
+          class="insta"
+          ><img src="./Images/instaIcon.png" alt="Instagram Icon"
+        /></a>
+        <a
+          href="https://www.tiktok.com/@littleadventurers_forest"
+          class="tiktok"
+          ><img src="./Images/tiktokIcon.png" alt="TikTok Icon"
+        /></a>
       </section>
     </footer>
     <script src="app.js"></script>
