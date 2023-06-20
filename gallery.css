@@ -6,3 +6,47 @@ nav {
     position: relative;
     bottom: 15rem;
 }
+
+.masonry {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 95%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vw;
+    gap: 5px;
+}
+
+.photo {
+    position: relative;
+    width: 33.33%;
+}
+
+.photo>img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 860px) {
+    .masonry {
+        height: 220vw;
+
+        .photo {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 667) {
+    .masonry {
+        height: auto;
+
+        .photo {
+            width: 100%;
+        }
+    }
+}
