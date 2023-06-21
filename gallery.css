@@ -7,6 +7,7 @@ nav {
     bottom: 15rem;
 }
 
+
 .masonry {
     overflow: hidden;
     margin: 0 auto;
@@ -29,6 +30,7 @@ nav {
 .photo>img {
     width: 100%;
     display: block;
+    border-radius: 5px;
 }
 
 @media (max-width: 860px) {

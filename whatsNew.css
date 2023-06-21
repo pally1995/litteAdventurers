@@ -4,5 +4,86 @@ nav {
 
 .main {
     position: relative;
-    bottom: 15rem;
+    top: 0rem;
 }
+
+.corkBoard{
+    width: 95vw;
+    margin: -15rem auto 0 auto;
+    border: 10px solid #7B3F00;
+    box-shadow: inset 2px 2px 10px 3px;
+    background-image: repeating-linear-gradient(36deg, rgb(210, 158, 45), rgb(210, 158, 45) 1px, transparent 0px, transparent 2px);
+    background-size: 12px;
+}
+
+.corkBoard > h2 {
+    font-size: 2rem;
+    margin: 1rem auto;
+    transform: rotate(2deg);
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    letter-spacing: -3.5px;
+    font-weight: 400;
+    color: #f0513e;
+    background: white;
+    padding: 1rem;
+    width: 47%;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.55);
+}
+
+.corkBoard > h2 > span {
+    margin: -.5rem auto .5rem auto;
+
+}
+
+.postArea{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: .5rem;
+    margin: .5rem;
+    box-shadow: 2px 2px 5px 2px;
+}
+
+.post > img {
+    height: 5rem;
+    border: 2px solid black;
+}
+
+.post > p {
+    text-align: center;
+}
+
+.post:nth-child(1n+1){
+    transform: rotate(3deg);
+    background: white;
+}
+
+.post:nth-child(2n+2){
+    transform: rotate(-3deg);
+    background: #ffff99;
+    width: 25%;
+    height: 7rem;
+}
+
+.pin{
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin: .3rem 0;
+    border: 1px solid black;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px 1px;
+
+}
+
