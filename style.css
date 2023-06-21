@@ -314,6 +314,7 @@ nav ul li a {
 }
 
 footer{
+	position: relative;
 	margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
