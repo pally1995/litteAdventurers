@@ -7,10 +7,16 @@ dark blue 238fcf
 dark green 5cb54b
 forest school green 67c243
 */
+.main {
+  position: relative;
+  top: 0rem;
+}
+
 .ethos{
     width: 100%;
     text-align: center;
     padding: 3rem 0 1rem 0;
+    margin-top: 4rem;
 }
 
 .ethos h2 {
@@ -40,6 +46,10 @@ forest school green 67c243
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   width: 60%;
   letter-spacing: -3px;
+}
+
+.contactBtn a {
+  text-decoration: none;
 }
 
 .contactBtn:hover {
@@ -87,6 +97,29 @@ forest school green 67c243
 
 .contactLetter9 {
 	color: #a8b929;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 2rem;
+}
+
+.bullets ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bullets img {
+  margin: 1rem;
+  width: 5rem;
+}
+
+.bullets img:nth-child(5){
+  width: 4rem !important;
 }
 
 
@@ -152,14 +185,14 @@ forest school green 67c243
 }
 
 .reviewBg {
-  margin-top: -2rem;
+  margin-top: -3rem;
   position: absolute;
   background: green;
   height: 20rem;
   width: 100%;
   z-index: -1;
   background: #017ca7;
-  clip-path: circle(68% at 50% 76%);
+  clip-path: circle(65% at 50% 76%);
 }
 
   .reviews h3 {

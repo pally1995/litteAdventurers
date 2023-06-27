@@ -1,21 +1,20 @@
 const burger = document.querySelector(".burger");
 const navBar = document.querySelector("nav");
-const navImg = document.querySelector("#navImg");
+const main = document.querySelector(".main")
 const slides = document.querySelectorAll(".slide");
 const nextSlide = document.querySelector(".btn-next");
 const prevSlide = document.querySelector(".btn-prev");
 const teamH1 = document.querySelector("#teamH1");
 
 burger.addEventListener('click', () => {
-    navBar.classList.toggle("open");
-    burger.classList.toggle("active");
+  navBar.classList.toggle("open");
+  burger.classList.toggle("active");
 
-    if(navBar.classList.contains("open")){
-      navImg.style.filter = "brightness(0.2)";
-      navImg.style.transition = "0.3s all ease-in-out";
-    } else {
-      navImg.style.filter = "none";
-    }
+  if(navBar.classList.contains("open")){
+    main.style.top = "17em";
+  } else {
+    main.style.top = "0rem";
+  }
 })
 
 slides.forEach((slide, index) => {
