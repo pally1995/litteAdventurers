@@ -21,10 +21,24 @@ forest school green 67c243
     line-height: 1.5rem;
 }
 
+.ethos p {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .ethos h2 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
+}
+
+.subHead {
+  /* margin-top: rem !important; */
+  font-size: 1.4rem;
+}
+
+.ethosTitle {
+  letter-spacing: -2px !important;
 }
 
 .contactBtnContainer{
@@ -107,12 +121,17 @@ forest school green 67c243
   align-items: center;
   width: 100vw;
   margin-bottom: 2rem;
+  margin-top: -1rem;
 }
 
 .bullets ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bullets li {
+  font-size: 1.3rem;
 }
 
 .bullets img {
