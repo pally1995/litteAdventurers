@@ -7,7 +7,8 @@ dark blue 238fcf
 dark green 5cb54b
 forest school green 67c243
 */
-.main {
+
+#main {
   position: relative;
   top: 0rem;
 }
@@ -16,7 +17,8 @@ forest school green 67c243
     width: 100%;
     text-align: center;
     padding: 3rem 0 1rem 0;
-    margin-top: 4rem;
+    margin-top: -22rem;
+    line-height: 1.5rem;
 }
 
 .ethos h2 {
@@ -177,30 +179,31 @@ forest school green 67c243
     flex-direction: column;
     align-items: center;
     color: white;
-    width: 100vw;
-    height: 20rem;
     margin: 1.2rem 0;
     padding-top: 2rem;
     position: relative;
+    line-height: 1.2rem;
+    gap: 2rem;
 }
 
 .reviewBg {
   margin-top: -3rem;
   position: absolute;
-  background: green;
-  height: 20rem;
+  height: 25rem;
   width: 100%;
   z-index: -1;
   background: #017ca7;
-  clip-path: circle(65% at 50% 76%);
+  clip-path: circle(66% at 50% 72%);
 }
 
   .reviews h3 {
     font-size: 1.7rem;
+    text-align: center;
   }
 
   .review1, .review2, .review3{
-    width: 60%;
+    width: 70%;
     margin: 1rem 0 0 0;
+    text-align: center;
   }
 

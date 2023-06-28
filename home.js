@@ -1,21 +1,22 @@
 const burger = document.querySelector(".burger");
 const navBar = document.querySelector("nav");
-const main = document.querySelector(".main")
+const mainId = document.querySelector("#main")
 const slides = document.querySelectorAll(".slide");
 const nextSlide = document.querySelector(".btn-next");
 const prevSlide = document.querySelector(".btn-prev");
 const teamH1 = document.querySelector("#teamH1");
+const goToTop = document.querySelector(".goToTop")
 
 burger.addEventListener('click', () => {
   navBar.classList.toggle("open");
   burger.classList.toggle("active");
 
   if(navBar.classList.contains("open")){
-    main.style.top = "17em";
+    mainId.style.top = "24rem";
   } else {
-    main.style.top = "0rem";
+    mainId.style.top = "0rem";
   }
-})
+ })
 
 slides.forEach((slide, index) => {
     slide.style.transform = `translateX(${index * 100}%)`;
@@ -55,3 +56,18 @@ slides.forEach((slide, index) => {
   
   setInterval(goToNextSlide, 5000); // Automatically go to the next slide every 5 seconds
   
+  goToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: 'smooth'
+    });
+  });
+  
+
+  window.addEventListener('scroll', () => {
+    if(window.scrollY == 0){
+      goToTop.style.display = "none";
+    } else {
+      goToTop.style.display = "block";
+    }
+  })

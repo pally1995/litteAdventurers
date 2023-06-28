@@ -1,14 +1,31 @@
 const burger = document.querySelector(".burger");
 const navBar = document.querySelector("nav");
 const main = document.querySelector(".main");
+const goToTop = document.querySelector(".goToTop");
 
 burger.addEventListener('click', () => {
     navBar.classList.toggle("open");
     burger.classList.toggle("active");
 
     if(navBar.classList.contains("open")){
-      main.style.bottom = "1rem";
+      main.style.top = "2rem";
     } else {
-      main.style.bottom = "15rem";
+      main.style.top = "-15rem";
     }
+})
+
+goToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behaviour: 'smooth'
+  });
+});
+
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY == 0){
+    goToTop.style.display = "none";
+  } else {
+    goToTop.style.display = "block";
+  }
 })
