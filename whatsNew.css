@@ -75,6 +75,10 @@ nav {
     height: 7rem;
 }
 
+.expand {
+    display: block;
+}
+
 .pin{
     display: block;
     height: 10px;

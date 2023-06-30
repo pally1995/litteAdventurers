@@ -2,6 +2,8 @@ const burger = document.querySelector(".burger");
 const navBar = document.querySelector("nav");
 const main = document.querySelector(".main");
 const goToTop = document.querySelector(".goToTop");
+const postIt = document.querySelector(".post");
+const expand = document.querySelector(".expand");
 
 burger.addEventListener('click', () => {
     navBar.classList.toggle("open");
@@ -27,5 +29,13 @@ window.addEventListener('scroll', () => {
     goToTop.style.display = "none";
   } else {
     goToTop.style.display = "block";
+  }
+})
+
+postIt.addEventListener('click', () => {
+  if (expand.style.display === "none"){
+    expand.style.display = "block";
+  } else {
+    expand.style.display = "none";
   }
 })
