@@ -91,7 +91,7 @@ body {
 nav {
 	display: flex;
 	width: 100%;
-	height: 18rem;
+	height: 21rem;
 	flex-direction: column;
 	align-items: center;
 	transition: all 0.3s ease-in-out;
@@ -100,20 +100,20 @@ nav {
 .animalContainer{
 	width: 100vw;
 	height: 4rem;
-	position: absolute;
+	position: relative;
 	justify-content: space-between;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background: white;
+	background: white !important;
 }
 
 #navImg {
-	width: 100vw;
-	height: 21rem;
-	z-index: -100;
+	max-width: 100%;
+	max-height: calc(100vh - 21rem);
 	position: relative;
-	bottom: 20rem;
+	bottom: 13rem;
+	margin-bottom: 7rem;
 }
 
 h1 {
@@ -232,8 +232,8 @@ nav ul {
 }
 
 nav.open ul {
-	margin-top: 6rem;
-    position: absolute;
+    position: relative;
+	top: 2rem;
     transition: 0.2s ease-in-out;
     opacity: 1;
     z-index: 200;

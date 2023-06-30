@@ -4,12 +4,14 @@ nav {
 
 .main {
     position: relative;
-    bottom: 15rem;
+    bottom: 17rem;
 }
 
 #teamH1 {
+    position: absolute;
     text-align: center;
-    margin-left: .3rem;
+    margin-top: -1rem; 
+    top: -1rem;
 }
 
 .cardsContainer {

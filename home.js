@@ -12,11 +12,12 @@ burger.addEventListener('click', () => {
   burger.classList.toggle("active");
 
   if(navBar.classList.contains("open")){
-    mainId.style.top = "24rem";
+    mainId.style.top = "35rem";
   } else {
-    mainId.style.top = "0rem";
+    mainId.style.top = "17rem";
   }
  })
+
 
 slides.forEach((slide, index) => {
     slide.style.transform = `translateX(${index * 100}%)`;

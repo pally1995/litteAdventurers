@@ -4,54 +4,8 @@ nav {
 
 .main {
     position: relative;
-    bottom: 15rem;
+    top: -18rem;
 }
-
-
-/* .masonry {
-    overflow: hidden;
-    margin: 0 auto;
-    width: 95%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.photo {
-    position: relative;
-    width: 33.33%;
-}
-
-.photo>img {
-    width: 100%;
-    display: block;
-    border-radius: 5px;
-}
-
-@media (max-width: 860px) {
-    .masonry {
-        height: 450vw;
-    }
-
-    .photo {
-        width: 50%;
-    }
-}
-
-
-@media (max-width: 667px) {
-    .masonry {
-        height: auto;
-
-        .photo {
-            width: 100%;
-        }
-    }
-} */
 
 masonry img {
    max-width: 100%;

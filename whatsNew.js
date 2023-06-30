@@ -8,9 +8,9 @@ burger.addEventListener('click', () => {
     burger.classList.toggle("active");
 
     if(navBar.classList.contains("open")){
-      main.style.top = "17rem";
+      main.style.top = "13rem";
     } else {
-      main.style.top = "0rem";
+      main.style.top = "-3rem";
     }
 })
 
