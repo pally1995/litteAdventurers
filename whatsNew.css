@@ -52,6 +52,7 @@ nav {
     padding: .5rem;
     margin: .5rem;
     box-shadow: 2px 2px 5px 2px;
+    transition: width 0.2s ease;
 }
 
 .post > img {
@@ -75,8 +76,12 @@ nav {
     height: 7rem;
 }
 
+.active {
+    width: 100% !important;
+}
+
 .expand {
-    display: block;
+    display: none;
 }
 
 .pin{
