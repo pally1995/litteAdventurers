@@ -3,8 +3,7 @@ const navBar = document.querySelector("nav");
 const main = document.querySelector(".main");
 const goToTop = document.querySelector(".goToTop");
 const postIt = document.querySelectorAll(".post");
-const expand = document.querySelector(".expand");
-const active = document.querySelector(".active");
+const active = document.querySelector(".post.active");
 
 burger.addEventListener('click', () => {
     navBar.classList.toggle("open");
@@ -33,11 +32,23 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
 postIt.forEach(item => {
   item.addEventListener('click', () => {
-    item.classList.toggle("active"); 
-    expand.style.display = "block";
+    const expand = item.querySelector('.expand');
+    const isActive = item.classList.contains('active');
+
+    if (!isActive) {
+      postIt.forEach(post => {
+        if (post !== item && post.classList.contains('active')) {
+          const otherExpand = post.querySelector('.expand');
+          post.classList.remove('active');
+          otherExpand.style.display = 'none';
+        }
+      });
+    }
+
+    item.classList.toggle('active');
+    expand.style.display = isActive ? 'none' : 'block';
   });
 });
 

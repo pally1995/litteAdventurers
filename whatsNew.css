@@ -38,13 +38,16 @@ nav {
 
 .postArea{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
     justify-content: space-around;
     margin-top: 1rem;
+    position: relative;
 }
 
 .post{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +56,7 @@ nav {
     margin: .5rem;
     box-shadow: 2px 2px 5px 2px;
     transition: width 0.2s ease;
+    z-index: 1;
 }
 
 .post > img {
@@ -76,12 +80,17 @@ nav {
     height: 7rem;
 }
 
-.active {
+.post.active {
     width: 100% !important;
+    z-index: 20;
+    position: absolute;
 }
 
 .expand {
     display: none;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
 }
 
 .pin{
