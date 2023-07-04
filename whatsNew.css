@@ -43,20 +43,28 @@ nav {
     gap: 5px;
     justify-content: space-around;
     margin-top: 1rem;
-    position: relative;
 }
 
+.postContainer {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 2px 2px 5px 2px;
+    transition: width 0.2s ease;
+    z-index: 1;
+    background: white;
+    transform: rotate(3deg);
+    background: white;
+}
 .post{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
-    padding: .5rem;
-    margin: .5rem;
-    box-shadow: 2px 2px 5px 2px;
-    transition: width 0.2s ease;
-    z-index: 1;
 }
 
 .post > img {
@@ -68,12 +76,12 @@ nav {
     text-align: center;
 }
 
-.post:nth-child(1n+1){
+.postContainer:nth-child(1n+1){
     transform: rotate(3deg);
     background: white;
 }
 
-.post:nth-child(2n+2){
+.postContainer:nth-child(2n+2){
     transform: rotate(-3deg);
     background: #ffff99;
     width: 25%;
@@ -82,14 +90,14 @@ nav {
 
 .post.active {
     width: 100% !important;
-    z-index: 20;
+    z-index: 20; 
     position: absolute;
 }
 
 .expand {
     display: none;
     text-align: center;
-    width: 100%;
+    width: 100% !important;
     z-index: 1;
 }
 
