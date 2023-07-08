@@ -32,31 +32,11 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// postIt.forEach(item => {
-//   item.addEventListener('click', () => {
-//     const expand = item.querySelector('.expand');
-//     const isActive = item.classList.contains('active');
-
-//     if (!isActive) {
-//       postIt.forEach(post => {
-//         if (post !== item && post.classList.contains('active')) {
-//           const otherExpand = post.querySelector('.expand');
-//           post.classList.remove('active');
-//           otherExpand.style.display = 'none';
-//         }
-//       });
-//     }
-
-//     item.classList.toggle('active');
-//     expand.style.display = isActive ? 'none' : 'block';
-//   });
-// });
-
 postIt.forEach(item => {
   item.addEventListener('click', function() {
     const expand = item.querySelector('.expand');
     const isActive = item.classList.contains('active');
-    const active = document.querySelector('.postContainer.active'); // Move this line inside the event listener
+    const active = document.querySelector('.postContainer.active'); 
 
     if (!isActive) {
       postIt.forEach(post => {
@@ -84,5 +64,3 @@ postIt.forEach(item => {
     expand.style.display = isActive ? 'none' : 'block';
   });
 });
-
-

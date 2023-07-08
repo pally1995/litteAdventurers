@@ -12,6 +12,7 @@ nav {
     text-align: center;
     margin-top: -1rem; 
     top: -1rem;
+    letter-spacing: 1px;
 }
 
 .cardsContainer {
@@ -41,6 +42,8 @@ nav {
 .card img {
     height: 10rem;
     width: 100%;
+    object-fit: cover;
+    
     border-radius: 5px;
 }
 

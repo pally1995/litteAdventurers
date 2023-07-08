@@ -55,17 +55,20 @@ nav {
     margin: 0.5rem;
     box-shadow: 2px 2px 5px 2px;
     transition: width 0.2s ease;
-    /* z-index: 1; */
+    cursor: pointer;
     background: white;
     transform: rotate(3deg);
     background: white;
 }
+
 .post{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
 
 .post > img {
     height: 5rem;

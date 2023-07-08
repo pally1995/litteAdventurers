@@ -4,7 +4,10 @@ html, body {
 	width: 100%;
 	overflow-x: hidden;
 	color: #646464;
-	font-family: 'Lilita One', sans-serif;
+	/* font-family: 'Lilita One', sans-serif; */
+	font-family: 'Doctor Soos Bold', sans-serif;
+
+
 }
 
 html, body, div, span, applet, object, iframe,
@@ -49,6 +52,7 @@ button {
 
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
+	appearance: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -85,7 +89,9 @@ table {
 
 /* main background colour */
 body {
-	background: #f9fbeb;
+	/* background: #f9fbeb;
+	 */
+	 background: #ede6c9;
 }
 
 nav {
@@ -118,13 +124,11 @@ nav {
 
 h1 {
 	position: relative;
-	font-family: 'Lilita One', sans-serif;
-	letter-spacing: 1.5px;
-	padding: 0.5rem;
-	font-weight: 400;
-	font-size: 2rem;
+	font-family: 'GrilledCheese BTN Toasted', sans-serif;
+	padding: 0.6rem;
+	font-size: 1.7em;
 	align-self: start;
-	letter-spacing: -3px;
+	letter-spacing: -5px;
 	z-index: 100;
 }
 
@@ -207,6 +211,7 @@ h1 a {
 	font-size: 1.3rem;
 	color: #67c243;
 	letter-spacing: 1px;
+	font-family: 'Doctor Soos Bold', sans-serif;
 }
 
 
@@ -221,7 +226,7 @@ forest school green 67c243
 */
 
 nav ul {
-	font-family: 'Lilita One', sans-serif;
+	/* font-family: 'Lilita One', sans-serif; */
 	letter-spacing: 1.5px;
 	list-style: none;
 	text-align: center;
@@ -244,13 +249,14 @@ nav ul li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0.5rem;
+	margin: 0.1rem;
 	padding: 0.3rem;
+	font-family: 'Doctor Soos Bold', sans-serif;
+	font-size: 1.5rem;
 }
 
 nav ul li a {
 	text-decoration: none;
-	font-weight: 700;
 }
 
 
@@ -337,7 +343,9 @@ footer{
 	display: flex;
 	flex-direction: column;
 	background: white;
-	color: #646464c5;
+	color: white;
+	background-color: #8ec744;
+	font-size: 1.3rem;
 }
 
 .address {
@@ -371,12 +379,12 @@ footer{
 .contactDetails a {
 	margin: 0.2rem 0;
 	text-decoration: none;
-	color: #646464;
+	color: white;
 }
 
 footer img {
 	margin: 1rem 0;
-	width: 3rem;
+	width: 6rem;
 	height: auto;
 	align-self: center;
 }
@@ -392,6 +400,7 @@ footer img {
 
   .fb img, .insta img, .tiktok img  {
     height: 3rem;
+	width: 3rem;
     margin: 0 1rem 0 1rem;
   }
 
