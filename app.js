@@ -3,29 +3,30 @@ const navBar = document.querySelector("nav");
 const main = document.querySelector(".main");
 const goToTop = document.querySelector(".goToTop");
 
-burger.addEventListener('click', () => {
-    navBar.classList.toggle("open");
-    burger.classList.toggle("active");
+//Opening burger menu toggle active class
+burger.addEventListener("click", () => {
+  navBar.classList.toggle("open");
+  burger.classList.toggle("active");
 
-    if(navBar.classList.contains("open")){
-      main.style.top = "-1rem";
-    } else {
-      main.style.top = "-18rem";
-    }
-})
+  if (navBar.classList.contains("open")) {
+    main.style.top = "-1rem";
+  } else {
+    main.style.top = "-18rem";
+  }
+});
 
-goToTop.addEventListener('click', () => {
+//go to top functionailty
+goToTop.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behaviour: 'smooth'
+    behaviour: "smooth",
   });
 });
 
-
-window.addEventListener('scroll', () => {
-  if(window.scrollY == 0){
+window.addEventListener("scroll", () => {
+  if (window.scrollY == 0) {
     goToTop.style.display = "none";
   } else {
     goToTop.style.display = "block";
   }
-})
+});
