@@ -512,3 +512,25 @@ footer img {
   padding: 1em;
   display: none;
 }
+
+@media only screen and (min-width: 500px) {
+  #navImg {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    opacity: 1 !important;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .burger  {
+    display: none;
+  }
+}
