@@ -346,7 +346,13 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
+  text-decoration: underline transparent;
+  transition: text-decoration 300ms ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .containerBurger {
@@ -393,7 +399,7 @@ nav ul li a {
 }
 
 .whatsNew a {
-  color: #58d1d9;
+  color: #238fcf;
 }
 
 .gallery a {
@@ -517,20 +523,40 @@ footer img {
   #navImg {
     width: 100%;
     object-fit: cover;
+    bottom: 12rem;
   }
+  .ethos p {
+    width: 40%;
+  }
+
+
 }
 
 @media only screen and (min-width: 1000px){
+
+  .animalContainer {
+    height: 4rem;
+  }
   nav ul {
     display: flex;
     flex-direction: row;
     opacity: 1 !important;
-    margin: 0;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
+    top: 4.5rem;
+    background-color: white;
+  }
+
+  #navImg {
+    margin-top: .5rem;
   }
 
   .burger  {
     display: none;
+  }
+
+  h1 {
+    position: absolute;
   }
 }
