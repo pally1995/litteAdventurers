@@ -438,8 +438,8 @@ hr {
 }
 
 footer {
-  position: relative;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  max-height: 32rem;
   display: flex;
   flex-direction: column;
   color: black;

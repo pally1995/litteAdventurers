@@ -148,7 +148,7 @@ forest school green 67c243
   width: 4rem !important;
 }
 
-.carousel {
+/* .carousel {
   max-width: 800px;
   height: 450px;
   position: relative;
@@ -159,17 +159,56 @@ forest school green 67c243
 .slide {
   width: 100%;
   max-width: 100%;
-  height: 350px;
+  height: 450px;
   position: absolute;
   transition: all 0.5s;
 }
 
 .slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+} */
+.carousel {
+  position: relative;
+  overflow: hidden;
 }
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+
+
+
 
 .btn {
   position: absolute;
@@ -202,44 +241,47 @@ forest school green 67c243
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: white;
-  margin: -5.8rem 0 9.5rem 0;
   padding-top: 2rem;
-  position: relative;
   line-height: 1.2rem;
   gap: 1rem;
+  position: relative;
+}
+
+.reviews p {
+  z-index: 1;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .reviewBg {
-  margin-top: -2.4rem;
-  position: absolute;
-  height: 41rem;
+  height: auto;
   width: 100%;
-  z-index: -1;
   background: #017ca7;
   border-top-right-radius: 30%;
   border-bottom-left-radius: 30%;
+  margin-bottom: 1rem;
 }
 
 .reviews h3 {
   font-size: 1.7rem;
   text-align: center;
+  z-index: 1;
+  margin: 1rem 0;
 }
 
 .review1,
 .review2,
 .review3 {
-  width: 90%;
-  margin: 1rem 1rem 0 0;
+  width: 70%;
+  margin: 1rem auto;
   text-align: center;
   align-self: flex-end;
+  position: relative; 
+  z-index: 1; 
 }
 
-@media only screen and (min-width: 500px){
-  .prospectusBtn {
-    margin-top: 10% !important;
-  }
-}
 
 @media only screen and (min-width: 1000px){
   .ethos p {

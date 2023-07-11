@@ -1,11 +1,13 @@
 const burger = document.querySelector(".burger");
 const navBar = document.querySelector("nav");
 const mainId = document.querySelector("#main");
-const slides = document.querySelectorAll(".slide");
-const nextSlide = document.querySelector(".btn-next");
-const prevSlide = document.querySelector(".btn-prev");
 const teamH1 = document.querySelector("#teamH1");
 const goToTop = document.querySelector(".goToTop");
+const carousel = document.querySelector('.carousel');
+const carouselInner = carousel.querySelector('.carousel-inner');
+const prevBtn = carousel.querySelector('.prev');
+const nextBtn = carousel.querySelector('.next');
+const carouselItems = carousel.querySelectorAll('.carousel-item');
 
 //burger menu functionality
 burger.addEventListener("click", () => {
@@ -19,44 +21,39 @@ burger.addEventListener("click", () => {
   }
 });
 
-//Carousel functionaility
-slides.forEach((slide, index) => {
-  slide.style.transform = `translateX(${index * 100}%)`;
-});
 
-let curSlide = 0;
-let maxSlide = slides.length - 1;
+let currentIndex = 0;
+const itemWidth = carouselItems[0].offsetWidth;
 
-function goToNextSlide() {
-  if (curSlide === maxSlide) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-
-  updateSlidePosition();
+function scrollToItem(index) {
+  const translateX = -index * itemWidth;
+  carouselInner.style.transform = `translateX(${translateX}px)`;
 }
 
-function goToPrevSlide() {
-  if (curSlide === 0) {
-    curSlide = maxSlide;
-  } else {
-    curSlide--;
-  }
-
-  updateSlidePosition();
+function scrollNext() {
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  scrollToItem(currentIndex);
 }
 
-function updateSlidePosition() {
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
+function scrollPrev() {
+  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  scrollToItem(currentIndex);
 }
 
-nextSlide.addEventListener("click", goToNextSlide);
-prevSlide.addEventListener("click", goToPrevSlide);
+function startAutoScroll() {
+  setInterval(scrollNext, 3000); // Change slide every 3 seconds
+}
 
-setInterval(goToNextSlide, 5000); // Automatically go to the next slide every 5 seconds
+prevBtn.addEventListener('click', scrollPrev);
+nextBtn.addEventListener('click', scrollNext);
+
+startAutoScroll();
+
+
+
+
+
+
 
 //Go to top button functionaility
 goToTop.addEventListener("click", () => {
