@@ -8,7 +8,8 @@ nav {
 }
 
 .corkBoard {
-  width: 95vw;
+  min-width: 10rem;
+  max-width: 60rem;
   margin: -15rem auto 0 auto;
   border: 10px solid #7b3f00;
   box-shadow: inset 2px 2px 10px 3px;

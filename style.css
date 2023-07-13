@@ -207,6 +207,7 @@ nav {
 #navImg {
   max-width: 100%;
   max-height: calc(100vh - 21rem);
+  min-height: 22rem;
   position: relative;
   bottom: 13rem;
   margin-bottom: 7rem;
