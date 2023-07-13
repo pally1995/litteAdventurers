@@ -201,7 +201,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: white !important;
+  background: #ede6c9;
 }
 
 #navImg {
@@ -546,7 +546,7 @@ footer img {
     justify-content: space-evenly;
     position: absolute;
     top: 4.5rem;
-    background-color: white;
+    background-color: #ede6c9;
   }
 
   #navImg {
