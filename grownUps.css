@@ -40,10 +40,8 @@ nav {
 }
 
 .card img {
-  height: 10rem;
   width: 100%;
-  object-fit: cover;
-
+  object-fit: contain;
   border-radius: 5px;
 }
 
@@ -51,3 +49,15 @@ nav {
   align-self: flex-start;
   margin: 5px;
 }
+
+ @media only screen and (min-width: 600px) {
+  .card {
+    max-width: calc(100% / 3); /* 3 columns on larger screens */
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .card {
+    max-width: calc(100% / 4); /* 4 columns on even larger screens */
+  }
+} 

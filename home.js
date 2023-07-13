@@ -21,9 +21,13 @@ burger.addEventListener("click", () => {
   }
 });
 
-
 let currentIndex = 0;
-const itemWidth = carouselItems[0].offsetWidth;
+let itemWidth = carouselItems[0].offsetWidth;
+const totalItems = carouselItems.length;
+
+function updateItemWidth() {
+  itemWidth = carouselItems[0].offsetWidth;
+}
 
 function scrollToItem(index) {
   const translateX = -index * itemWidth;
@@ -31,12 +35,12 @@ function scrollToItem(index) {
 }
 
 function scrollNext() {
-  currentIndex = (currentIndex + 1) % carouselItems.length;
+  currentIndex = (currentIndex + 1) % totalItems;
   scrollToItem(currentIndex);
 }
 
 function scrollPrev() {
-  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
   scrollToItem(currentIndex);
 }
 
@@ -44,9 +48,12 @@ function startAutoScroll() {
   setInterval(scrollNext, 3000); // Change slide every 3 seconds
 }
 
+window.addEventListener('resize', updateItemWidth); // Update itemWidth on window resize
+
 prevBtn.addEventListener('click', scrollPrev);
 nextBtn.addEventListener('click', scrollNext);
 
+updateItemWidth(); // Initial calculation of itemWidth
 startAutoScroll();
 
 

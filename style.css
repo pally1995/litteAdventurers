@@ -346,14 +346,14 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: underline transparent;
-  transition: text-decoration 300ms ease;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
-  text-decoration-thickness: 2px;
 }
+
+
 
 .containerBurger {
   width: 100vw;
@@ -517,6 +517,7 @@ footer img {
   font-size: 12px;
   padding: 1em;
   display: none;
+  z-index: 10;
 }
 
 @media only screen and (min-width: 500px) {
