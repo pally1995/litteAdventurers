@@ -7,13 +7,6 @@ nav {
   top: -18rem;
 }
 
-masonry img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  display: inline-block;
-}
-
 .masonry div {
   display: flex;
   justify-content: center;
@@ -23,15 +16,16 @@ masonry img {
 .masonry div img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 5px;
 }
 
 .masonry {
   padding: 0 0.5rem;
+  margin: 0 .5rem;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 2fr));
-  grid-auto-rows: 200px;
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: row dense;
 }

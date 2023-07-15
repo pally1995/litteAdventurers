@@ -13,6 +13,13 @@ nav {
   margin-top: -1rem;
   top: -1rem;
   letter-spacing: 1px;
+  color: #027700;
+}
+
+.staffIntro {
+  margin: 1rem auto;
+  width: 90%;
+  text-align: center;
 }
 
 .cardsContainer {
@@ -37,17 +44,23 @@ nav {
 .card > p {
   margin: 5px 0;
   text-align: center;
+  font-size: 2rem;
 }
 
 .card img {
   width: 100%;
+  min-height: 11.2rem;
   object-fit: contain;
   border-radius: 5px;
 }
 
 .card > ul {
-  align-self: flex-start;
-  margin: 5px;
+  align-self: start;
+  margin: 5px 1.2rem;
+}
+
+.card > ul > li {
+  list-style: square;
 }
 
  @media only screen and (min-width: 600px) {

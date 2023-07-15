@@ -4,5 +4,200 @@ nav {
 
 .main {
   position: relative;
-  bottom: 15rem;
+  bottom: 18rem;
+}
+
+.benchImg {
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 15rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+h2 {
+  letter-spacing: .1rem;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.keyInfoCard {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enrollmentTitle {
+  font-size: 1.5rem;
+  margin-bottom: .5rem !important; 
+}
+
+.keyInfoCard p {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+.startTimesTitle {
+  margin-top: 1rem !important;
+  margin-bottom: .5rem !important;
+  font-size: 1.5rem;
+}
+
+.keyInfoCard li {
+  margin: .2rem 0;
+  text-align: center;
+}
+
+.keyInfoCard img {
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 15rem;
+  margin: 1.5rem 0;
+}
+
+.pricesTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contactBtnContainer {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactBtn {
+  border: 5px solid #f0513e;
+  box-sizing: border-box;
+  color: #f0513e;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background-color: #ede6c9;
+  font-family: "GrilledCheese BTN Toasted", sans-serif;
+  padding: 16px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 15rem;
+  letter-spacing: -3px;
+}
+
+.contactBtn a {
+  text-decoration: none;
+}
+
+.contactBtn:hover {
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.contactBtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.contactLetter1 {
+  color: #f0513e;
+}
+
+.contactLetter2 {
+  color: #238fcf;
+}
+
+.contactLetter3 {
+  color: #577000;
+}
+
+.contactLetter4 {
+  color: #d2b221;
+}
+
+.contactLetter5 {
+  color: #238fcf;
+}
+
+.contactLetter6 {
+  color: #5cb54b;
+}
+
+.contactLetter7 {
+  color: #f0513e;
+}
+
+.contactLetter8 {
+  color: #238fcf;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.whatYouNeedCard {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.whatYouNeedCard p {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+.summerKit, .winterKit {
+  margin: .5rem 0 .5rem 0 !important;
+  font-size: 1.3rem;
+}
+
+.whatYouNeedCard ul li {
+  list-style: square;
+  margin: .2rem 0;
+}
+
+.whatYouNeedCard img{
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 15rem;
+  margin: 1rem 0;
+}
+
+.didricksons, .warmWellies, .termTimes{
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.didricksons p, .warmWellies p, .termTimes p {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+.didricksons p:nth-child(1), .warmWellies p:nth-child(1), .termTimes p:nth-child(1) {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: -16rem;
 }
