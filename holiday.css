@@ -3,13 +3,11 @@
     bottom: 18rem;
   }
 
-img {
-    max-width: 100%;
-    max-height: calc(100vh - 21rem);
-    min-height: 15rem;
-    position: relative;
-    bottom: -1rem;
-    margin-bottom: 1rem;
+.heroImg {
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 15rem;
+  margin: 1.5rem 0;
 }
 
 h2 {
@@ -77,5 +75,6 @@ h2 {
   }
 
   footer{
-    margin-top: -16rem;
+    margin-bottom: -18rem;
   }
+ 

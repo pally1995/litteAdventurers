@@ -4,7 +4,7 @@
     bottom: 18rem;
 }
 
-img{
+.heroImg{
     max-width: 100%;
     max-height: calc(100vh - 21rem);
     min-height: 15rem;
@@ -87,6 +87,7 @@ h2 {
     list-style: square inside;
   }
 
-  footer {
-    margin-top: -15rem;
+  footer{
+    margin-bottom: -18rem;
   }
+ 
