@@ -7,7 +7,7 @@ nav {
   top: -18rem;
 }
 
-.masonry div {
+/* .masonry div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,4 +28,35 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   grid-auto-rows: 250px;
   grid-auto-flow: row dense;
+} */
+
+.masonry{
+  max-width: 1223px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media(max-width: 500px){
+  .gallery{
+    flex-direction: column;
+  }
 }

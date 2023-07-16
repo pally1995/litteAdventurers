@@ -1,8 +1,92 @@
-nav {
-    margin-bottom: 3rem;
-}
 
 .main {
     position: relative;
-    bottom: 15rem;
+    bottom: 18rem;
 }
+
+img{
+    max-width: 100%;
+    max-height: calc(100vh - 21rem);
+    min-height: 15rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    letter-spacing: .1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #027700;
+  }
+
+  .toddlerKeyInfoCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatToExpectTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+  }
+
+  .daysAndTimesCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .daysTimesTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+  }
+
+  .daysAndTimesCard li {
+    margin: .2rem 0;
+    text-align: center;
+    list-style: inside;
+  }
+
+  .blockBookingCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blockBook {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+  }
+
+  .whatToBringoCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatToBringTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+  }
+
+  .whatToBringCard li {
+    margin: .2rem 0;
+    text-align: center;
+    list-style: square inside;
+  }
+
+  footer {
+    margin-top: -15rem;
+  }

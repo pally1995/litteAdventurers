@@ -1,0 +1,81 @@
+.main {
+    position: relative;
+    bottom: 18rem;
+  }
+
+img {
+    max-width: 100%;
+    max-height: calc(100vh - 21rem);
+    min-height: 15rem;
+    position: relative;
+    bottom: -1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    letter-spacing: .1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #027700;
+  }
+
+  .holidayClubKeyInfoCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .holidayClubTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+  }
+  
+  .holidayClubKeyInfoCard p {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .timesAndDatesCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timesDatesTitle {
+    margin-top: 1rem !important;
+    margin-bottom: .5rem !important;
+    font-size: 1.5rem;
+  }
+  
+  .whatToBringCard{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatToBringTitle {
+    margin-top: 1rem !important;
+    margin-bottom: .5rem !important;
+    font-size: 1.5rem;
+  }
+
+  .whatToBringCard li {
+    margin: .2rem 0;
+    text-align: center;
+    list-style: square;
+  }
+
+  footer{
+    margin-top: -16rem;
+  }
