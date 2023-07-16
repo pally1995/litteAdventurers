@@ -3,6 +3,10 @@
   bottom: 17rem;
 }
 
+nav {
+  margin-bottom: 3rem;
+}
+
 #teamH1 {
   position: absolute;
   text-align: center;
