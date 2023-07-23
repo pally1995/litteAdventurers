@@ -33,39 +33,27 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/*
-  post it note click even functionaility. As a post it note is clicked it will expand to have a width of 100% but remianin in the same position. 
-  once clicked again or anoter post it is clicked it will return to original size
-*/ 
-postIt.forEach((item) => {
-  item.addEventListener("click", function () {
-    const expand = item.querySelector(".expand");
-    const isActive = item.classList.contains("active");
-    const active = document.querySelector(".postContainer.active");
+let activePost = null;
+let activeExpand = null;
 
-    if (!isActive) {
-      postIt.forEach((post) => {
-        if (post !== item && post.classList.contains("active")) {
-          const otherExpand = post.querySelector(".expand");
-          post.classList.remove("active");
-          otherExpand.style.display = "none";
-          otherExpand.style.top = ""; // Reset top position
-        }
-      });
-    } else {
-      expand.style.top = ""; // Reset top position
-    }
+const resetTopPosition = (item) => item.style.top = "";
 
-    if (!isActive) {
-      const postAreaTop = item.parentNode.offsetTop;
-      const postContainerTop = item.offsetTop;
+const closeActivePosts = () => postIt.forEach((post) => post !== activePost && post.classList.contains("active") ? (post.classList.remove("active"), resetTopPosition(post.querySelector(".expand")), post.querySelector(".expand").style.display = "none") : null);
 
-      item.style.top = `${postContainerTop - postAreaTop + 120}px`;
-    } else {
-      item.style.top = ""; // Reset top position
-    }
+const togglePost = (item, expand, isActive) => {
+  if (activePost && activePost !== item) return;
 
-    item.classList.toggle("active");
-    expand.style.display = isActive ? "none" : "block";
-  });
-});
+  if (!isActive) {
+    closeActivePosts();
+    item.style.top = `${item.offsetTop - item.parentNode.offsetTop + 120}px`;
+  } else {
+    resetTopPosition(item);
+  }
+
+  item.classList.toggle("active");
+
+  [activePost, activeExpand] = isActive ? [null, null] : [item, expand];
+  expand.style.display = isActive ? "none" : "block";
+};
+
+postIt.forEach((item) => item.addEventListener("click", () => togglePost(item, item.querySelector(".expand"), item.classList.contains("active"))));
