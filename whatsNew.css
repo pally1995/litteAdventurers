@@ -11,16 +11,6 @@ nav {
   min-width: 10rem;
   max-width: 60rem;
   margin: -15rem auto 0 auto;
-  border: 10px solid #7b3f00;
-  box-shadow: inset 2px 2px 10px 3px;
-  background-image: repeating-linear-gradient(
-    36deg,
-    rgb(210, 158, 45),
-    rgb(210, 158, 45) 1px,
-    transparent 0px,
-    transparent 2px
-  );
-  background-size: 12px;
 }
 
 .corkBoard > h2 {
@@ -42,10 +32,8 @@ nav {
 }
 
 .postArea {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: space-around;
   margin-top: 1rem;
 }
@@ -55,6 +43,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-self: center;
   width: 7rem !important;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -83,15 +72,25 @@ nav {
 }
 
 .postContainer:nth-child(1n + 1) {
-  transform: rotate(3deg);
-  background: white;
+  transform: rotate(4deg);
+  background: feff9c;
 }
 
 .postContainer:nth-child(2n + 2) {
-  transform: rotate(-3deg);
-  background: #ffff99;
+  transform: rotate(2deg);
+  background: #fff740;
   width: 25%;
   height: 7rem;
+}
+
+.postContainer:nth-child(3n+3){
+  background: #7afcff;
+  transform: rotate(-2deg);
+}
+
+.postContainer:nth-child(4n+4){
+  background: #ff7eb9;
+  transform: rotate(-4deg);
 }
 
 .postContainer.active {

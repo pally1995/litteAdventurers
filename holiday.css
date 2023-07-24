@@ -27,11 +27,19 @@ h2 {
     align-items: center;
   }
   
-  .holidayClubTitle {
-    font-size: 1.5rem;
-    margin-bottom: .5rem !important; 
-  }
-  
+ .agesShapeBg{
+    margin: 1rem 0;
+    font-size: 2rem;
+ }
+
+ .hapazoneImg {
+  max-width: 100%;
+  max-height: calc(100vh - 30rem);
+  min-height: 15rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+ }
+ 
   .holidayClubKeyInfoCard p {
     margin: 0 auto;
     text-align: center;
@@ -45,12 +53,21 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .timesDatesTitle {
-    margin-top: 1rem !important;
     margin-bottom: .5rem !important;
     font-size: 1.5rem;
+  }
+
+  .timesAndPricesTitle {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .timesAndDatesCard li {
+    padding: .2rem 0;
   }
   
   .whatToBringCard{
@@ -70,7 +87,7 @@ h2 {
 
   .whatToBringCard li {
     margin: .2rem 0;
-    text-align: center;
+    text-align: start;
     list-style: square;
   }
 

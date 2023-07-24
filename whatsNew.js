@@ -33,27 +33,47 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 let activePost = null;
 let activeExpand = null;
 
 const resetTopPosition = (item) => item.style.top = "";
 
-const closeActivePosts = () => postIt.forEach((post) => post !== activePost && post.classList.contains("active") ? (post.classList.remove("active"), resetTopPosition(post.querySelector(".expand")), post.querySelector(".expand").style.display = "none") : null);
-
-const togglePost = (item, expand, isActive) => {
-  if (activePost && activePost !== item) return;
-
-  if (!isActive) {
-    closeActivePosts();
-    item.style.top = `${item.offsetTop - item.parentNode.offsetTop + 120}px`;
-  } else {
-    resetTopPosition(item);
-  }
-
-  item.classList.toggle("active");
-
-  [activePost, activeExpand] = isActive ? [null, null] : [item, expand];
-  expand.style.display = isActive ? "none" : "block";
+const closeActivePosts = () => {
+  postIt.forEach((post) => {
+    if (post !== activePost && post.classList.contains("active")) {
+      post.classList.remove("active");
+      resetTopPosition(post.querySelector(".expand"));
+      post.querySelector(".expand").style.display = "none";
+    }
+  });
 };
 
-postIt.forEach((item) => item.addEventListener("click", () => togglePost(item, item.querySelector(".expand"), item.classList.contains("active"))));
+const togglePost = (item, expand, isActive) => {
+  if (isActive) {
+    // If the clicked post is already active, simply reset its state and return
+    item.classList.remove("active");
+    resetTopPosition(item);
+    expand.style.display = "none";
+    activePost = null;
+    activeExpand = null;
+  } else {
+    // If there is an active post, return without opening another one
+    if (activePost) return;
+
+    closeActivePosts();
+    item.style.top = `${item.offsetTop - item.parentNode.offsetTop + 120}px`;
+    item.classList.add("active");
+    activePost = item;
+    activeExpand = expand;
+    expand.style.display = "block";
+  }
+};
+
+postIt.forEach((item) => {
+  item.addEventListener("click", () => {
+    const expand = item.querySelector(".expand");
+    const isActive = item.classList.contains("active");
+    togglePost(item, expand, isActive);
+  });
+});

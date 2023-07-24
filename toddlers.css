@@ -50,7 +50,7 @@ h2 {
   .daysAndTimesCard li {
     margin: .2rem 0;
     text-align: center;
-    list-style: inside;
+    list-style: none;
   }
 
   .blockBookingCard {
@@ -60,6 +60,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .blockBook {
@@ -67,25 +68,44 @@ h2 {
     margin-bottom: .5rem !important; 
   }
 
-  .whatToBringoCard {
+  .dropInsTitle{
+    font-size: 1.5rem;
+    margin: 1rem 0 .5rem 0 !important;
+  }
+
+  .whatToBringCard {
     width: 90%;
-    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .whatToBringTitle {
     font-size: 1.5rem;
     margin-bottom: .5rem !important; 
+    text-align: center;
   }
 
-  .whatToBringCard li {
-    margin: .2rem 0;
+  .agesCard{
     text-align: center;
-    list-style: square inside;
+    margin: 1rem 0;
   }
+
+ .agesTitle{
+  font-size: 1.5rem;
+  margin: .5rem 0;
+  text-align: center;
+ }
+
+ .waterPlayImg{
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 15rem;
+  margin: 1.5rem 0 -1.5rem 0;
+ }
+
 
   footer{
     margin-bottom: -18rem;
