@@ -30,6 +30,7 @@ h2 {
  .agesShapeBg{
     margin: 1rem 0;
     font-size: 2rem;
+    color: #f0513e;
  }
 
  .hapazoneImg {
@@ -59,11 +60,13 @@ h2 {
   .timesDatesTitle {
     margin-bottom: .5rem !important;
     font-size: 1.5rem;
+    color: #238fcf;
   }
 
   .timesAndPricesTitle {
     font-size: 1.5rem;
     margin: 1rem auto;
+    color: #577000;
   }
 
   .timesAndDatesCard li {
@@ -83,10 +86,16 @@ h2 {
     margin-top: 1rem !important;
     margin-bottom: .5rem !important;
     font-size: 1.5rem;
+    color: #d2b221;
+  }
+
+  .whatToBringCard ul {
+    column-count: 2;
+    margin: 0 auto;
   }
 
   .whatToBringCard li {
-    margin: .2rem 0;
+    margin: .2rem 1rem;
     text-align: start;
     list-style: square;
   }

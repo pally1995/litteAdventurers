@@ -32,11 +32,6 @@ h2 {
   align-items: center;
 }
 
-.enrollmentTitle {
-  font-size: 1.5rem;
-  margin-bottom: .5rem !important; 
-}
-
 .keyInfoCard p {
   margin: 0 auto;
   text-align: center;
@@ -47,6 +42,7 @@ h2 {
   margin-top: 1rem !important;
   margin-bottom: .5rem !important;
   font-size: 2rem;
+  color: #f0513e;
 }
 
 .keyInfoCard li {
@@ -59,6 +55,7 @@ h2 {
   max-height: calc(100vh - 21rem);
   min-height: 15rem;
   margin: 1.5rem 0;
+  border-radius: 5px;
 }
 
 .legsImg{
@@ -70,17 +67,13 @@ h2 {
 .pricesTitle {
   font-size: 2rem;
   margin-bottom: .5rem !important;
+  color: #238fcf;
 }
 
 .pricing{
   margin-bottom: 2rem !important;
 }
 
-.downArrow {
-  font-size: 2rem;
-  margin-top: .1em !important;
-  margin-bottom: -1rem !important;
-}
 .contactBtnContainer {
   width: 100%;
   margin: 1rem 0 1rem 0;
@@ -152,6 +145,14 @@ h2 {
   color: #238fcf;
 }
 
+/* 
+red #f0513e
+blue #238fcf
+green #577000
+yellow #d2b221
+
+*/
+
 h3 {
   font-size: 2rem;
   text-align: center;
@@ -167,9 +168,10 @@ h3 {
   align-items: center;
 }
 
-h4 {
+.whatYouNeedTitle {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
+  color: #577000;
 }
 
 .whatYouNeedCard p {
@@ -178,22 +180,35 @@ h4 {
   width: 85%;
 }
 
+.whatYouNeedCard p i {
+  color: #f0513e;
+}
+
 .summerKit, .winterKit {
   margin: .5rem 0 .5rem 0 !important;
   font-size: 2rem;
 }
 
+.summerKit {
+  color: #d2b221;
+}
+
+.winterKit {
+  color: #238fcf;
+}
+
 .whatYouNeedCard ul {
-  display: flex;
-  flex-direction: row;
-  width: 95%;
-  flex-flow: wrap;
-  justify-content: space-around;
+  width: 90%;
+  column-count: 3;
 }
 
 .whatYouNeedCard ul li {
   list-style: square;
-  margin: .2rem 10px;
+  margin: .2rem 5px;
+}
+
+.whatYouNeedCard > ul:nth-child(6){
+  margin-bottom: 1rem;
 }
 
 
@@ -202,6 +217,7 @@ h4 {
   max-height: calc(100vh - 21rem);
   min-height: 15rem;
   margin: 1rem 0;
+  border-radius: 5px;
 }
 
 .didricksons, .warmWellies, .termTimes{
@@ -212,6 +228,20 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
+.didricksons > p:nth-child(1){
+  color: #f0513e;
+}
+
+.warmWellies > p:nth-child(1) {
+  color: #577000;
+}
+
+.termTimes > p:nth-child(1) {
+  color: #238fcf;
+}
+
+
 
 .didricksons p, .warmWellies p, .termTimes p {
   margin: 0 auto;
@@ -230,6 +260,8 @@ h4 {
   min-height: 15rem;
   margin: 1rem 0;
 }
+
+
 
 footer {
   margin-top: -16rem;

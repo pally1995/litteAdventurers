@@ -14,12 +14,17 @@
 .ethos p {
   width: 80%;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.ethosMainBody {
+  background: #ffe14d4b;
+  padding: 1.5rem 0;
 }
 
 .ethos h2 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 1rem 0;
 }
 
@@ -29,7 +34,7 @@
 }
 
 .ethosTitle {
-  letter-spacing: -3px !important;
+  letter-spacing: -5px !important;
 }
 
 .contactBtnContainer {

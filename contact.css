@@ -61,7 +61,3 @@ form > button:active {
   box-shadow: none;
   transform: translateY(0);
 }
-
-footer {
-  margin-top: -10rem;
-}

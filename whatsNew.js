@@ -4,6 +4,7 @@ const main = document.querySelector(".main");
 const goToTop = document.querySelector(".goToTop");
 const postIt = document.querySelectorAll(".postContainer");
 const active = document.querySelector(".post.active");
+const img = document.querySelectorAll("img");
 
 //buger menu functionaility
 burger.addEventListener("click", () => {
@@ -77,3 +78,4 @@ postIt.forEach((item) => {
     togglePost(item, expand, isActive);
   });
 });
+
