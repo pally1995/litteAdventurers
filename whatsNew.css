@@ -66,10 +66,21 @@
 .post > img {
   height: 5rem;
   border: 2px solid black;
+  margin: .5rem .5rem;
 }
 
 .post > p {
   text-align: center;
+}
+
+.postItTitle{
+  margin: .5rem 0;
+  font-size: 1.5rem;
+}
+
+.seeMore{
+  font-size: 1rem;
+  color: #f0513e;
 }
 
 .postContainer:nth-child(1n + 1) {
@@ -111,8 +122,14 @@
   position: relative;
 }
 
-.post > img .imgExpand{
-  width: 20rem !important;
+.expand > p {
+  width: 70%;
+  text-align: center;
+  margin: .5rem auto;
+}
+
+.post > img.imgExpand{
+  height: 12rem;
 }
 
 .pin {

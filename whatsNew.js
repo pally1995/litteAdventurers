@@ -51,6 +51,8 @@ const closeActivePosts = () => {
 };
 
 const togglePost = (item, expand, isActive) => {
+  const seeMore = item.querySelector(".seeMore");
+
   if (isActive) {
     // If the clicked post is already active, simply reset its state and return
     item.classList.remove("active");
@@ -58,6 +60,13 @@ const togglePost = (item, expand, isActive) => {
     expand.style.display = "none";
     activePost = null;
     activeExpand = null;
+    seeMore.style.display = "block";
+
+    // Remove imgExpand class from the image when collapsing the post
+    const img = item.querySelector("img");
+    if (img) {
+      img.classList.remove('imgExpand');
+    }
   } else {
     // If there is an active post, return without opening another one
     if (activePost) return;
@@ -68,6 +77,12 @@ const togglePost = (item, expand, isActive) => {
     activePost = item;
     activeExpand = expand;
     expand.style.display = "block";
+    seeMore.style.display = "none";
+
+    const img = item.querySelector("img");
+    if (img) {
+      img.classList.add('imgExpand');
+    }
   }
 };
 
@@ -77,5 +92,15 @@ postIt.forEach((item) => {
     const isActive = item.classList.contains("active");
     togglePost(item, expand, isActive);
   });
-});
 
+  // Add a separate click listener to the image to toggle its visibility
+  const img = item.querySelector("img");
+  if (img) {
+    img.addEventListener("click", (event) => {
+      event.stopPropagation(); // Prevent the click on the image from triggering the post expansion
+      img.classList.add('imgExpand');
+      item.classList.add("active");
+      togglePost(item, item.querySelector(".expand"), false); // Expand the post without closing other posts
+    });
+  }
+});
