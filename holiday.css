@@ -1,6 +1,7 @@
 .main {
-    position: relative;
-    bottom: 18rem;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
   }
 
 .heroImg {

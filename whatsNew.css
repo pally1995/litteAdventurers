@@ -1,11 +1,12 @@
-nav {
+ nav {
   margin-bottom: 3rem;
 }
 
 .main {
-  position: relative;
-  top: -3rem;
-}
+  position: absolute;
+  top: 19rem;
+  width: 100%;
+} 
 
 .corkBoard {
   min-width: 10rem;

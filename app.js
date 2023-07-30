@@ -9,9 +9,9 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("active");
 
   if (navBar.classList.contains("open")) {
-    main.style.top = "-1rem";
+    main.style.top = "21rem"; //-1
   } else {
-    main.style.top = "-18rem";
+    main.style.top = "3rem";
   }
 });
 
