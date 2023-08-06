@@ -159,8 +159,9 @@
 
 .carousel img {
   width: 100%;
-  height: auto;
-  /* display: block; */
+  max-width: 35rem;
+  /* height: auto; */
+  max-height: 35rem;
 }
 
 .carousel-control {
@@ -267,22 +268,26 @@
   .review3{
     width: 60%;
   } 
+
+  .carousel img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
   
+
 }
 
 @media only screen and (min-width: 730px){
   .reviewBg{
     width: 60%;
   }
+
 }
 
 @media only screen and (min-width: 1000px){
-  .ethos p {
-    width: 50%;
-  }
 
   .reviewBg {
     width: 50%;
   }
-
 }

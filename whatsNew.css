@@ -10,8 +10,7 @@
 
 .corkBoard {
   min-width: 10rem;
-  max-width: 60rem;
-  margin: -15rem auto 0 auto;
+  margin: -13rem auto 0 auto;
 }
 
 .corkBoard > h2 {
