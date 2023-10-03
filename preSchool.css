@@ -12,7 +12,7 @@ nav {
   max-width: 100%;
   max-height: calc(100vh - 21rem);
   min-height: 15rem;
-  margin: 1rem 0;
+  margin: 3rem 0 0 0;
 }
 
 h2 {
@@ -259,4 +259,15 @@ h3 {
   max-height: calc(100vh - 21rem);
   min-height: 15rem;
   margin: 1rem 0;
+}
+
+@media only screen and (min-width: 1000px){
+  #benchImgId {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #benchImgId img {
+    display: inline-block;
+  }
 }

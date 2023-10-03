@@ -18,7 +18,7 @@ nav {
 
 h2 {
   font-size: 2.5rem;
-  padding: 1.5rem 0 2rem 0;
+  padding: 3rem 0 2rem 0;
   color: #027700;
 }
 
@@ -61,4 +61,36 @@ form > button:hover {
 form > button:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+@media only screen and (min-width: 1000px){
+
+  .animalContainer {
+    height: 4rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    opacity: 1 !important;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 4.5rem;
+    background-color: #ede6c9;
+  }
+
+  #navImg {
+    margin-top: .5rem;
+  }
+
+  .burger  {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .burger {
+    display: none;
+  }
 }

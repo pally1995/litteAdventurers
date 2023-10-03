@@ -200,7 +200,7 @@ nav {
 
 .animalContainer {
   width: 100vw;
-  height: 4rem;
+  height: 10rem;
   position: relative;
   justify-content: space-between;
   display: flex;
@@ -226,6 +226,7 @@ h1 {
   align-self: start;
   letter-spacing: -2.5px;
   z-index: 100;
+  bottom: 6.5rem;
 }
 
 h1 a {
@@ -326,7 +327,6 @@ nav ul {
   letter-spacing: 1.5px;
   list-style: none;
   text-align: center;
-  margin-top: 1.5rem;
   width: 100%;
   opacity: 0;
   transform: translateY(-120%);
@@ -345,7 +345,6 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.1rem;
   padding: 0.3rem;
   font-family: "Doctor Soos Bold", sans-serif;
   font-size: 1.5rem;
@@ -532,7 +531,7 @@ footer img {
 @media only screen and (min-width: 1000px){
 
   .animalContainer {
-    height: 4rem;
+    height: 7rem;
   }
   nav ul {
     display: flex;
@@ -546,14 +545,15 @@ footer img {
   }
 
   #navImg {
-    margin-top: .5rem;
+    margin-top: 2rem;
+  }
+
+  .masonry {
+    margin: 2rem auto !important;
   }
 
   .burger  {
     display: none;
   }
 
-  h1 {
-    position: absolute;
-  }
 }
