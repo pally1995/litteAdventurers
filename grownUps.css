@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  bottom: 17rem;
+  bottom: 14rem;
 }
 
 nav {
@@ -10,7 +10,6 @@ nav {
 #teamH1 {
   position: absolute;
   text-align: center;
-  margin-top: 1rem;
   top: -1rem;
   letter-spacing: 1px;
   color: #027700;

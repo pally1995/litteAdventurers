@@ -226,7 +226,7 @@ h1 {
   align-self: start;
   letter-spacing: -2.5px;
   z-index: 100;
-  bottom: 6.5rem;
+  bottom: 3.5rem;
 }
 
 h1 a {
@@ -358,8 +358,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-
-
 .containerBurger {
   width: 100vw;
   display: flex;
@@ -371,6 +369,9 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
 }
 
 .bar1,
@@ -529,7 +530,7 @@ footer img {
 }
 
 @media only screen and (min-width: 1000px){
-
+  
   .animalContainer {
     height: 7rem;
   }
@@ -537,15 +538,24 @@ footer img {
     display: flex;
     flex-direction: row;
     opacity: 1 !important;
-    align-items: center;
+    align-items: end;
     justify-content: space-evenly;
     position: absolute;
-    top: 4.5rem;
+    top: 11rem;
     background-color: #ede6c9;
+    height: 6rem;
+    padding: 1rem 0;
+    border-bottom: 5px solid rgb(227, 122, 9);
+    border-bottom-style: dashed;
+  }
+
+  nav ul a {
+    font-size: 2rem;
   }
 
   #navImg {
-    margin-top: 2rem;
+    margin-top: 5rem;
+    max-height: 30rem !important;
   }
 
   .masonry {
@@ -554,6 +564,15 @@ footer img {
 
   .burger  {
     display: none;
+  }
+
+  h1 {
+    bottom: 7rem;
+    font-size: 2.5rem;
+  }
+  
+  .fSchool {
+    font-size: 1.5rem;
   }
 
 }

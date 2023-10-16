@@ -256,6 +256,10 @@
   z-index: 1; 
 }
 
+.grassImgOnDekstop{
+  display: none;
+}
+
 @media only screen and (min-width: 500px){
   .reviewBg{
     border-top-left-radius: 5%;
@@ -290,5 +294,79 @@
   .reviewBg {
     width: 50%;
   }
+
+  .ethosAndImgContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ethosMainBody{
+    flex: 1;
+    width: 30%;
+    height: 21rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+    border-radius: 5%;
+  }
+
+  .grassImgOnDekstop {
+    flex: 1;
+    display: block;
+    width: 40%;
+    height: 24rem;
+    margin: 1rem;
+    object-fit: contain;
+  }
+
+  .grassImgOnDekstop img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+  }
+
+  .ethos {
+    margin-top: -20rem;
+  }
+
+  h2 {
+    font-size: 4.5rem !important;
+    margin: 1.5rem !important;
+  }
+
+  .subHead {
+    font-size: 2rem !important;
+  }
+
+  .bullets{
+    width: 90%;
+  }
+
+  .bullets li {
+    font-size: 1.7rem;
+  }
+
+  .liContOne {
+    transform: translateX(-15rem);
+  }
+
+  .liContTwo {
+    transform: translate(21rem, -7.5rem);
+  }
+  
+  .liContThree {
+    transform: translate(5rem, -2rem);
+  }
+
+
+  .carousel-control.prev{
+    left: 350px !important;
+  }
+
+  .carousel-control.next{
+    right: 350px !important;
+  }
+
+
 }
 
