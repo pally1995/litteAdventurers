@@ -198,7 +198,7 @@ h3 {
 }
 
 .whatYouNeedCard ul {
-  width: 90%;
+  width: 95%;
   column-count: 3;
 }
 
@@ -269,5 +269,9 @@ h3 {
 
   #benchImgId img {
     display: inline-block;
+  }
+
+  p, li {
+    font-size: 1.5rem;
   }
 }

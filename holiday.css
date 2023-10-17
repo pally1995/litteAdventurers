@@ -114,4 +114,8 @@ h2 {
     #heroImgId img {
       display: inline-block;
     }
+
+    p, li {
+      font-size: 1.5rem;
+    }
   }

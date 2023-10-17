@@ -550,7 +550,7 @@ footer img {
   }
 
   nav ul a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #navImg {
@@ -575,4 +575,10 @@ footer img {
     font-size: 1.5rem;
   }
 
+}
+
+@media only screen and (min-width: 1200px){
+  nav ul a {
+    font-size: 2rem;
+  }
 }
