@@ -1,0 +1,65 @@
+nav {
+  margin-bottom: 2rem;
+}
+
+.main {
+  position: absolute;
+  top: 7.5rem;
+  width: 100%;
+}
+
+.contactContainer {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 3rem 0 2rem 0;
+  color: #027700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+form > input {
+  margin: 9px 0;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+form > textarea {
+  margin: 9px 0;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+form > button {
+  margin: 1rem 0;
+  padding: 0.7rem;
+  width: 7rem;
+  align-self: center;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form > button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+form > button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+

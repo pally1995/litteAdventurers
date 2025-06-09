@@ -1,0 +1,139 @@
+
+.main {
+    position: absolute;
+    top: 7.5rem;
+    width: 100%;
+}
+
+.heroImg{
+    max-width: 100%;
+    max-height: calc(100vh - 21rem);
+    min-height: 15rem;
+    margin: 3rem 0 0 0;
+}
+
+h2 {
+    letter-spacing: .1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #027700;
+  }
+
+  img.heroImg:nth-child(3){
+    border-radius: 5px;
+  }
+
+  .toddlerKeyInfoCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatToExpectTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+    color: #f0513e;
+  }
+
+  .daysAndTimesCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .daysTimesTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+    color: #238fcf;
+  }
+
+  .daysAndTimesCard li {
+    margin: .2rem 0;
+    text-align: center;
+    list-style: none;
+  }
+
+  .blockBookingCard {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blockBook {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+    color: #577000;
+  }
+
+  .dropInsTitle{
+    font-size: 1.5rem;
+    margin: 1rem 0 .5rem 0 !important;
+    color: #d2b221;
+  }
+
+  .whatToBringCard {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whatToBringTitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem !important; 
+    text-align: center;
+    color: #f0513e;
+  }
+
+  .agesCard{
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+ .agesTitle{
+  font-size: 1.5rem;
+  margin: .5rem 0;
+  text-align: center;
+  color: #238fcf;
+ }
+
+ .waterPlayImg{
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 15rem;
+  margin: 1.5rem 0 -1.5rem 0;
+  border-radius: 5px;
+ }
+
+
+  footer{
+    margin-bottom: -18rem;
+  }
+ 
+  @media only screen and (min-width: 1000px){
+    #heroImgId {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #heroImgId img {
+      display: inline-block;
+    }
+
+    p, li {
+      font-size: 1.5rem;
+    }
+  }

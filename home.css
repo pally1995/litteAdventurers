@@ -1,0 +1,381 @@
+#main {
+  position: absolute;
+  top: 17rem;
+}
+
+.ethos {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0 1rem 0;
+  margin-top: -22rem;
+  line-height: 1.5rem;
+}
+
+.ethos p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+.ethosMainBody {
+  background: #ffe14d4b;
+  padding: 1.5rem 0;
+}
+
+.ethos h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.subHead {
+  font-size: 1.8rem;
+  color: #577000;
+}
+
+.ethosTitle {
+  letter-spacing: -5px !important;
+}
+
+.contactBtnContainer {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactBtn {
+  border: 5px solid #f0513e;
+  box-sizing: border-box;
+  color: #f0513e;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background-color: #ede6c9;
+  font-family: "GrilledCheese BTN Toasted", sans-serif;
+  padding: 16px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 15rem;
+  letter-spacing: -3px;
+}
+
+.contactBtn a {
+  text-decoration: none;
+}
+
+.contactBtn:hover {
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.contactBtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.contactLetter1 {
+  color: #f0513e;
+}
+
+.contactLetter2 {
+  color: #238fcf;
+}
+
+.contactLetter3 {
+  color: #577000;
+}
+
+.contactLetter4 {
+  color: #d2b221;
+}
+
+.contactLetter5 {
+  color: #238fcf;
+}
+
+.contactLetter6 {
+  color: #5cb54b;
+}
+
+.contactLetter7 {
+  color: #f0513e;
+}
+
+.contactLetter8 {
+  color: #238fcf;
+}
+
+.contactLetter9 {
+  color: #577000;
+}
+
+.contactLetter10 {
+  color: #d2b221;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+.bullets ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bullets li {
+  font-size: 1.3rem;
+}
+
+.bullets img {
+  margin: 1rem;
+  width: 5rem;
+}
+
+.bullets img:nth-child(5) {
+  width: 4rem !important;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 35rem;
+  /* height: auto; */
+  max-height: 35rem;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 33%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 33%;
+  right: 2%;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 2rem;
+  line-height: 1.2rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.reviews p {
+  z-index: 1;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.reviewBg {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background: #017ca7;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  margin-bottom: 1rem;
+}
+
+.reviews h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  z-index: 1;
+  margin: 1rem 0;
+}
+
+.review1,
+.review2,
+.review3,
+.review4,
+.review5 {
+  width: 70%;
+  margin: 1rem auto;
+  text-align: center;
+  align-self: flex-end;
+  position: relative; 
+  z-index: 1; 
+}
+
+.grassImgOnDekstop{
+  display: none;
+}
+
+@media only screen and (min-width: 500px){
+  .reviewBg{
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    max-width: 80%;
+  }
+
+  .review1,
+  .review2,
+  .review3{
+    width: 60%;
+  } 
+
+  .carousel img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+
+}
+
+@media only screen and (min-width: 730px){
+  .reviewBg{
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  h2 {
+    font-size: 4.5rem !important;
+    margin: 1.5rem !important;
+  }
+
+  .subHead {
+    font-size: 2rem !important;
+  }
+
+  .bullets{
+    width: 90%;
+  }
+
+  .bullets li {
+    font-size: 1.7rem;
+  }
+
+  .liContOne {
+    transform: translateX(-15rem);
+  }
+
+  .liContTwo {
+    transform: translate(21rem, -7.5rem);
+  }
+  
+  .liContThree {
+    transform: translate(5rem, -2rem);
+  }
+
+
+  .carousel-control.prev{
+    left: 150px !important;
+  }
+
+  .carousel-control.next{
+    right: 150px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+
+  .reviewBg {
+    width: 50%;
+  }
+
+  .ethosAndImgContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ethosMainBody{
+    flex: 1;
+    width: 40%;
+    height: 19rem;
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem;
+    border-radius: 5%;
+  }
+
+  .grassImgOnDekstop {
+    flex: 1;
+    display: block;
+    width: 40%;
+    height: 22rem;
+    margin: 1rem;
+    object-fit: contain;
+  }
+
+  .grassImgOnDekstop img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+  }
+
+  .ethos {
+    margin-top: -20rem;
+  }
+
+  .reviews p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.7rem;
+  }
+
+}
+
