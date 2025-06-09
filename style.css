@@ -183,6 +183,7 @@ table {
   **************************************
 */
 
+
 /* main background colour */
 body {
   background: #ede6c9;
@@ -226,7 +227,7 @@ h1 {
   align-self: start;
   letter-spacing: -2.5px;
   z-index: 100;
-  bottom: 3.5rem;
+  bottom: 5.5rem;
 }
 
 h1 a {
@@ -435,7 +436,6 @@ nav ul li a:hover {
 
 footer {
   margin-top: 3rem;
-  max-height: 32rem;
   display: flex;
   flex-direction: column;
   color: black;
@@ -446,6 +446,7 @@ footer {
 .address {
   display: flex;
   justify-content: space-between;
+
 }
 
 .calvertonDetails {
@@ -525,8 +526,18 @@ footer img {
   .ethos p {
     width: 40%;
   }
+}
 
+@media only screen and (min-width: 768px){
+  .contactDetails {
+    position: relative;
+    bottom:9.5rem;
+  }
 
+  .socials {
+    position: relative;
+    bottom: 9rem;
+  }
 }
 
 @media only screen and (min-width: 1000px){

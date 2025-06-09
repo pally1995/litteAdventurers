@@ -4,8 +4,14 @@ nav {
 
 .main {
   position: absolute;
-  top: 7.5rem;
+  top: 7rem;
   width: 100%;
+}
+
+#benchImgId {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
 }
 
 .benchImg {
@@ -197,6 +203,15 @@ h3 {
   color: #238fcf;
 }
 
+.summerKitList, .winterKitList {
+  display: flex;
+  justify-content: center;
+}
+
+.winterKitList {
+  margin-bottom: 1.5rem;
+}
+
 .whatYouNeedCard ul {
   width: 95%;
   column-count: 3;
@@ -260,6 +275,7 @@ h3 {
   min-height: 15rem;
   margin: 1rem 0;
 }
+
 
 @media only screen and (min-width: 1000px){
   #benchImgId {
