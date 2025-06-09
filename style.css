@@ -1,59 +1,584 @@
 /* CSS Reset  */
-html, body {
-	width: 100%;
-	overflow-x: hidden;
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #646464;
+  /* font-family: 'Lilita One', sans-serif; */
+  font-family: "Doctor Soos Bold", sans-serif;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@font-face {
+  font-family: "grilledCheese";
+  src: url(https://fonts.cdnfonts.com/css/grilledcheese-btn-toasted?styles=15134);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "doctorSoos";
+  src: url(https://fonts.cdnfonts.com/css/doctor-soos?styles=38861,38860);
+  font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main stying mainly for global styiling
+  **************************************
+  **************************************
+  **************************************
+  **************************************
+*/
+
+/* main background colour */
+body {
+  background: #ede6c9;
+  font-display: swap !important;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 21rem;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.animalContainer {
+  width: 100vw;
+  height: 10rem;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ede6c9;
+}
+
+#navImg {
+  max-width: 100%;
+  max-height: calc(100vh - 21rem);
+  min-height: 22rem;
+  position: relative;
+  bottom: 13rem;
+  margin-bottom: 7rem;
+}
+
+h1 {
+  position: relative;
+  font-family: "GrilledCheese BTN Toasted", sans-serif;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  align-self: start;
+  letter-spacing: -2.5px;
+  z-index: 100;
+  bottom: 3.5rem;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+.letter1 {
+  color: #f0513e;
+}
+
+.letter2 {
+  color: #58d1d9;
+}
+
+.letter3 {
+  /* color: #c6d932; */
+  color: #577000;
+}
+
+.letter4 {
+  color: #d2b221;
+}
+
+.letter5 {
+  color: #238fcf;
+}
+
+.letter6 {
+  margin-right: 0.6rem;
+  color: #577000;
+}
+
+.letter7 {
+  color: #f0513e;
+}
+
+.letter8 {
+  color: #58d1d9;
+}
+
+.letter9 {
+  /* color: #c6d932; */
+  color: #577000;
+}
+
+.letter10 {
+  color: #d2b221;
+}
+
+.letter11 {
+  color: #238fcf;
+}
+
+.letter12 {
+  color: #577000;
+}
+
+.letter13 {
+  color: #f0513e;
+}
+
+.letter14 {
+  color: #58d1d9;
+}
+
+.letter15 {
+  color: #577000;
+}
+
+.letter16 {
+  color: #d2b221;
+}
+
+.letter17 {
+  color: #238fcf;
+}
+
+.fSchool {
+  display: block;
+  font-size: 1.3rem;
+  /* color: #67c243; */
+  color: #027700;
+  letter-spacing: 1px;
+  font-family: "Doctor Soos Bold", sans-serif;
+}
+
+/*
+red #f0513e
+light blue 58d1d9
+lught green c6d932
+yellow fecf05
+dark blue 238fcf
+dark green 5cb54b
+forest school green 67c243
+*/
+
+nav ul {
+  letter-spacing: 1.5px;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-120%);
+}
+
+nav.open ul {
+  position: relative;
+  top: 2rem;
+  transform: translateY(-10%);
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+  z-index: 200;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  font-family: "Doctor Soos Bold", sans-serif;
+  font-size: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.containerBurger {
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  margin: -3.31rem 0 0 -1rem;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 1.8rem;
+  height: 0.2rem;
+  background: #f0513e;
+  margin: 0.12rem;
+  transition: transform 0.2s ease-in-out;
+  z-index: 100;
+}
+
+.burger.active .bar1 {
+  transform: rotate(-45deg) translate(-3px, 3px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger.active .bar2 {
+  opacity: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger.active .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home a {
+  color: #f0513e;
+}
+
+.whatsNew a {
+  color: #238fcf;
+}
+
+.gallery a {
+  color: #577000;
+}
+
+.ourGrownUps a {
+  color: #d2b221;
+}
+
+.toddlers a {
+  color: #238fcf;
+}
+
+.preSchool a {
+  color: #577000;
+}
+
+.holiday a {
+  color: #f0513e;
+}
+
+.contact a {
+  color: #238fcf !important;
 }
 
 
-/* Template Styling */
+footer {
+  margin-top: 3rem;
+  max-height: 32rem;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: #8ec744;
+  font-size: 1.3rem;
+}
 
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calvertonDetails {
+  margin: 0.5rem 1.5rem;
+}
+
+.calvertonDetails h4 {
+  margin-bottom: 0.5rem;
+}
+
+.walesbyDetails {
+  margin: 0.5rem 1.5rem;
+}
+
+.walesbyDetails h4 {
+  margin-bottom: 0.5rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.contactDetails a {
+  margin: 0.2rem 0;
+  text-decoration: none;
+  color: black;
+  padding: 0.7rem;
+}
+
+footer img {
+  margin: 1rem 0;
+  width: 6rem;
+  height: auto;
+  align-self: center;
+}
+
+.socials {
+  margin: 0 0 2rem 0rem;
+  text-align: center;
+}
+
+.socials h3 {
+  margin-bottom: 1rem;
+}
+
+.fb img,
+.insta img,
+.tiktok img {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.goToTop {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  padding: 1em;
+  display: none;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 500px) {
+  #navImg {
+    width: 100%;
+    object-fit: cover;
+    bottom: 12rem;
+  }
+  .ethos p {
+    width: 40%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1000px){
+  
+  .animalContainer {
+    height: 7rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    opacity: 1 !important;
+    align-items: end;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 11rem;
+    background-color: #ede6c9;
+    height: 6rem;
+    padding: 1rem 0;
+    border-bottom: 5px solid rgb(227, 122, 9);
+    border-bottom-style: dashed;
+  }
+
+  nav ul a {
+    font-size: 1.5rem;
+  }
+
+  #navImg {
+    margin-top: 5rem;
+    max-height: 30rem !important;
+  }
+
+  .masonry {
+    margin: 2rem auto !important;
+  }
+
+  .burger  {
+    display: none;
+  }
+
+  h1 {
+    bottom: 7rem;
+    font-size: 2.5rem;
+  }
+  
+  .fSchool {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1200px){
+  nav ul a {
+    font-size: 2rem;
+  }
+}
