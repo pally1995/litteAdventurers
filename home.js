@@ -27,6 +27,7 @@ const totalItems = carouselItems.length;
 
 function updateItemWidth() {
   itemWidth = carouselItems[0].offsetWidth;
+  scrollToItem(currentIndex); // reposition on resize
 }
 
 function scrollToItem(index) {
@@ -37,25 +38,32 @@ function scrollToItem(index) {
 function scrollNext() {
   currentIndex = (currentIndex + 1) % totalItems;
   scrollToItem(currentIndex);
+  resetAutoScroll();
 }
 
 function scrollPrev() {
   currentIndex = (currentIndex - 1 + totalItems) % totalItems;
   scrollToItem(currentIndex);
+  resetAutoScroll();
 }
+
+let autoScrollInterval;
 
 function startAutoScroll() {
-  setInterval(scrollNext, 3000); // Change slide every 3 seconds
+  autoScrollInterval = setInterval(scrollNext, 4000);
 }
 
-window.addEventListener('resize', updateItemWidth); // Update itemWidth on window resize
+function resetAutoScroll() {
+  clearInterval(autoScrollInterval);
+  startAutoScroll();
+}
 
+window.addEventListener('resize', updateItemWidth);
 prevBtn.addEventListener('click', scrollPrev);
 nextBtn.addEventListener('click', scrollNext);
 
-updateItemWidth(); // Initial calculation of itemWidth
+updateItemWidth();
 startAutoScroll();
-
 
 
 

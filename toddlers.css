@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+#heroImgId {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
 .heroImg{
     max-width: 100%;
     max-height: calc(100vh - 21rem);
